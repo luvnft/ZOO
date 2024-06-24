@@ -1,0 +1,76 @@
+from datetime import datetime
+from typing import Union
+
+from langchain_core.messages import HumanMessage
+
+from src.autodb.autodb import AutoDB
+from src.config.config import autodb_config, config
+from src.database.supabasedb import SupabaseDB
+from src.langchain.llm import LLM
+from src.langchain.models import ImitateChat, LLMConfig, LLMNames, LLMProviders
+from src.messaging.basemessaging import BaseMessaging
+from src.messaging.models import Message
+from src.utils.logger import logger
+from src.utils.utils import render_jinja_template
+
+
+class CommunicateManager:
+    def __init__(
+        self,
+        messaging_service: BaseMessaging,
+        message: Message,
+        uid: Union[int, str],
+        database: SupabaseDB,
+    ) -> None:
+        self.messaging_service = messaging_service
+        self.database = database
+        self.message = message
+        self.uid = uid
+        self.relevant_user_data = None
+        self.chat = []
+
+    def get_relevant_user_data(self):
+        autodb = AutoDB.from_config(autodb_config)
+        data = autodb.get_data(self.message.message.message.text, self.database)
+        self.relevant_user_data = data
+        logger.info(data)
+
+    def get_past_conversation(self):
+        messages = self.database.get_rows(
+            config.DATABASE_CONFIG.CONSTANT_IDS.TABLE_IDS.MESSAGE
+        )[0][1]
+
+        if len(messages) > 0:
+            self.chat.extend(
+                LLM.imitate_chat(
+                    [
+                        ImitateChat(
+                            message=message["message"], is_llm=message["from_bot"]
+                        )
+                        for message in messages
+                    ]
+                )
+            )
+
+    async def send_llm_response_message(self):
+        system_prompt = render_jinja_template(
+            "respond.jinja",
+            "src/manager/communicate/templates",
+            username=self.message.user_name,
+            time=datetime.now().isoformat(),
+            user_information=self.relevant_user_data,
+        )
+
+        llm_config = LLMConfig(provider=LLMProviders.GOOGLE, name=LLMNames.GEMINI_PRO)
+        llm = LLM.from_config(llm_config)
+
+        llm.system_prompt = system_prompt
+        response = llm.generate_response(
+            self.chat + [HumanMessage(content=self.message.message.message.text)]
+        ).content
+
+        self.database.append_row(
+            config.DATABASE_CONFIG.CONSTANT_IDS.TABLE_IDS.MESSAGE,
+            {"id": self.database.user_id, "from_bot": True, "message": response},
+        )
+        return await self.messaging_service.send_message(response, self.uid)
