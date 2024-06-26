@@ -1,8 +1,8 @@
 import asyncio
+import os
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
-from pyngrok import ngrok
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 
@@ -28,19 +28,30 @@ class LoggingMiddleware(BaseHTTPMiddleware):
 async def lifespan(app: FastAPI):
     # before start
     logger.info("Starting application.")
-    ngrok_connection = ngrok.connect(addr="127.0.0.1:8000", proto="http")
-    print(ngrok_connection.public_url)
 
-    _bot = TelegramBot.from_config(config.MESSAGING_CONFIG.TELEGRAM)
-    asyncio.get_event_loop().create_task(
-        _bot.register_webhook(f"{ngrok_connection.public_url}/telegram")
-    )
+    if os.getenv("USE_NGROK") == "true":
+        from pyngrok import ngrok
+
+        ngrok_connection = ngrok.connect(addr="127.0.0.1:8000", proto="http")
+        print(ngrok_connection.public_url)
+
+        _bot = TelegramBot.from_config(config.MESSAGING_CONFIG.TELEGRAM)
+        asyncio.get_event_loop().create_task(
+            _bot.register_webhook(f"{ngrok_connection.public_url}/telegram")
+        )
+    else:
+        _bot = TelegramBot.from_config(config.MESSAGING_CONFIG.TELEGRAM)
+        asyncio.get_event_loop().create_task(
+            _bot.register_webhook("https://ai-assistant-0qu9.onrender.com/telegram")
+        )
+
     yield
 
     # after close
     logger.info("Closing application.")
-    ngrok.disconnect(ngrok_connection.public_url)
-    ngrok.kill()
+    if os.getenv("USE_NGROK") == "true":
+        ngrok.disconnect(ngrok_connection.public_url)
+        ngrok.kill()
 
 
 # Loading FastAPI app
