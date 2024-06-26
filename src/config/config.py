@@ -68,7 +68,9 @@ def load_config(
         raise ValueError(f"Error parsing configuration: {e}") from e
 
 
-config = cast(AIAssistantConfig, load_config("src/config/local.yaml", set_env=True))
+testing = False
+prefix = "src/config/" if testing else "/etc/secrets/"
+config = cast(AIAssistantConfig, load_config(f"{prefix}local.yaml", set_env=True))
 autodb_config = cast(
     AutoDBConfig, load_config("src/config/autodb.yaml", config_type=AutoDBConfig)
 )
