@@ -15,7 +15,7 @@ class BaseMessaging(ABC):
 
     @classmethod
     @abstractmethod
-    async def recieve_message(cls, request: Request) -> Message:
+    async def receive_message(cls, request: Request) -> Message:
         """Handle an incoming message from a sender."""
         pass
 

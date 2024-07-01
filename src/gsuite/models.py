@@ -6,7 +6,7 @@ from pydantic import BaseModel
 class GAuthConfig(BaseModel):
     GOOGLE_CLIENT_ID: str
     GOOGLE_CLIENT_SECRET: str
-    GOOGLE_AUTH_SCOPE: List[str]
+    # GOOGLE_AUTH_SCOPE: List[str]
 
 
 class GCalError(Exception):

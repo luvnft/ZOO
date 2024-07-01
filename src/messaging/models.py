@@ -1,11 +1,19 @@
 from enum import Enum
-from typing import List, Optional, Union
+from typing import List, Optional, Union, Dict, Any
 
 from pydantic import BaseModel
 
 
 class TelegramBotConfig(BaseModel):
     TELEGRAM_BOT_TOKEN: str
+
+class BirdConfig(BaseModel):
+    BIRD_API_URL: str
+    BIRD_ORGANIZATION_ID: str
+    BIRD_WORKSPACE_ID: str
+    BIRD_API_KEY: str
+    BIRD_SIGNING_KEY: str
+    BIRD_CHANNEL_ID: str
 
 
 class _TelegramPhoto(BaseModel):
@@ -113,9 +121,15 @@ class TelegramMessage(BaseModel):
         _TelegramMessageDocument,
     ]
 
+class BirdMessage(BaseModel):
+    sender: Dict[str, Any]
+    channelId: str
+    body: Dict[str, Any]
+    message: str
 
 class MessageMedium(Enum):
     TELEGRAM = "telegram"
+    BIRD = "bird"
 
 
 class MessageType(Enum):
@@ -124,11 +138,12 @@ class MessageType(Enum):
 
 
 class Message(BaseModel):
-    message: Union[TelegramMessage]
+    content: Union[TelegramMessage, BirdMessage, str]
     uid: Union[int, str]
     user_name: Optional[str]
     medium: MessageMedium
     type: MessageType
+
 
 
 class MessageParsingError(Exception):

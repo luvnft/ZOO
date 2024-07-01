@@ -8,7 +8,7 @@ from pydantic import BaseModel, ValidationError
 from src.autodb.models import AutoDBConfig
 from src.database.models import ConstantIDConfig, SupabaseConfig, _UserIDConfig
 from src.gsuite.models import GAuthConfig
-from src.messaging.models import TelegramBotConfig
+from src.messaging.models import TelegramBotConfig, BirdConfig
 
 
 class CalendarConfig(BaseModel):
@@ -19,6 +19,7 @@ class CalendarConfig(BaseModel):
 
 class MessagingConfig(BaseModel):
     TELEGRAM: TelegramBotConfig
+    BIRD: BirdConfig
 
 
 class DatabaseConfig(BaseModel):
@@ -68,7 +69,7 @@ def load_config(
         raise ValueError(f"Error parsing configuration: {e}") from e
 
 
-testing = False
+testing = True
 prefix = "src/config/" if testing else "/etc/secrets/"
 config = cast(AIAssistantConfig, load_config(f"{prefix}local.yaml", set_env=True))
 autodb_config = cast(

@@ -4,23 +4,24 @@ from src.config.config import config
 from src.manager.manager import Manager
 from src.messaging.telegrambot import TelegramBot
 from src.utils.logger import logger
+from src.messaging.factory import MessagingProviderFactory
 
 router = APIRouter()
 
 
-@router.post("/telegram")
+@router.post("/message")
 async def message_webhook(request: Request):
-    messaging_service = TelegramBot.from_config(config.MESSAGING_CONFIG.TELEGRAM)
+    messaging_service, request_body = await MessagingProviderFactory.create_provider(request, config=config.MESSAGING_CONFIG)
 
-    try:
-        recieved_message = await messaging_service.recieve_message(request)
-        recieved_uid = recieved_message.uid
+    try: 
+        received_message = await messaging_service.receive_message(request_body)
+        received_uid = received_message.uid
         logger.info(  # pylint: disable=W1203
-            f"Recieved Message (from {recieved_message.medium.value}): "
-            f"{recieved_message}"
+            f"Received Message (from {received_message.medium.value}): "
+            f"{received_message}"
         )
 
-        manager = Manager(messaging_service, recieved_message, recieved_uid)
+        manager = Manager(messaging_service, received_message, received_uid)
         intent = await manager.find_intent()
         logger.info(intent)
     except Exception as e:
@@ -30,3 +31,4 @@ async def message_webhook(request: Request):
         return {"message": "Received"}
 
     return {"message": "Received"}
+

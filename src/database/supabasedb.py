@@ -7,7 +7,7 @@ from src.config.config import UserIDType, UserTableName
 from src.database.basedb import BaseDB
 from src.database.models import SupabaseConfig
 
-
+# TODO: set db's room id
 class SupabaseDB(BaseDB):
     def __init__(self, url: str, key: str) -> None:
         supabase = create_client(url, key)

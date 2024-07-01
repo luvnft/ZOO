@@ -38,7 +38,7 @@ class TelegramBot(BaseMessaging):
         return cls(token)
 
     @classmethod
-    async def recieve_message(cls, request: Request) -> Message:
+    async def receive_message(cls, request: Request) -> Message:
         """Handle an incoming message from a Telegram sender."""
         try:
             # Fix double quotes issue and parse request body

@@ -2342,3 +2342,273 @@
 2024-06-23 17:36:06,241 - src.utils.logger - INFO - Closing application.
 2024-06-23 17:36:10,726 - src.utils.logger - INFO - Starting application.
 2024-06-24 05:41:22,569 - src.utils.logger - INFO - Closing application.
+2024-07-01 12:57:34,382 - src.utils.logger - INFO - Starting application.
+2024-07-01 12:57:51,121 - src.utils.logger - INFO - Recieved Message (from telegram): message=TelegramMessage(update_id=17943877, message=_TelegramMessageText(message_id=1417, from_=_TelegramUser(id=7057302452, is_bot=False, first_name='Devanshu', last_name='Pandey', language_code='en'), chat=_TelegramChat(id=7057302452, first_name='Devanshu', last_name='Pandey', type='private'), date=1719809871, text='Yoyo', entities=None)) uid=7057302452 user_name='Devanshu Pandey' medium=<MessageMedium.TELEGRAM: 'telegram'> type=<MessageType.TEXT: 'text'>
+2024-07-01 12:57:54,102 - src.utils.logger - INFO - User has unauthenticated Google account.
+2024-07-01 12:57:54,102 - src.utils.logger - ERROR - Unexpected error when recieving message: 'GAuthConfig' object has no attribute 'GOOGLE_AUTH_SCOPE'
+2024-07-01 12:58:01,011 - src.utils.logger - INFO - Intents.ANSWER_QUERY
+2024-07-01 12:59:01,073 - src.utils.logger - INFO - Recieved Message (from telegram): message=TelegramMessage(update_id=17943878, message=_TelegramMessageText(message_id=1419, from_=_TelegramUser(id=7197921982, is_bot=False, first_name='Chris', last_name='Chen', language_code='en'), chat=_TelegramChat(id=7197921982, first_name='Chris', last_name='Chen', type='private'), date=1719809941, text='Hi', entities=None)) uid=7197921982 user_name='Chris Chen' medium=<MessageMedium.TELEGRAM: 'telegram'> type=<MessageType.TEXT: 'text'>
+2024-07-01 12:59:02,022 - src.utils.logger - INFO - User is not signed up yet.
+2024-07-01 12:59:02,915 - src.utils.logger - ERROR - Unexpected error when recieving message: {'code': '23502', 'details': "Failing row contains (null, 2024-07-01 04:59:03.768588+00, t, Hey Chris Chen! 👋\n\nI'm thrilled you've decided to meet with m..., null, 254).", 'hint': None, 'message': 'null value in column "id" of relation "messages" violates not-null constraint'}
+2024-07-01 12:59:08,054 - src.utils.logger - INFO - Intents.ANSWER_QUERY
+2024-07-01 13:10:13,846 - src.utils.logger - INFO - Closing application.
+2024-07-01 13:10:15,123 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:10:36,612 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:44:13,721 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:45:54,117 - src.utils.logger - INFO - Recieved Message (from telegram): message=TelegramMessage(update_id=17943879, message=_TelegramMessageText(message_id=1421, from_=_TelegramUser(id=7197921982, is_bot=False, first_name='Chris', last_name='Chen', language_code='en'), chat=_TelegramChat(id=7197921982, first_name='Chris', last_name='Chen', type='private'), date=1719812754, text='Hey', entities=None)) uid=7197921982 user_name='Chris Chen' medium=<MessageMedium.TELEGRAM: 'telegram'> type=<MessageType.TEXT: 'text'>
+2024-07-01 13:45:56,031 - src.utils.logger - INFO - User has unauthenticated Google account.
+2024-07-01 13:45:56,031 - src.utils.logger - ERROR - Unexpected error when recieving message: 'GAuthConfig' object has no attribute 'GOOGLE_AUTH_SCOPE'
+2024-07-01 13:46:01,731 - src.utils.logger - INFO - Intents.ANSWER_QUERY
+2024-07-01 13:46:30,763 - src.utils.logger - INFO - Closing application.
+2024-07-01 13:46:32,102 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:46:45,244 - src.utils.logger - INFO - Closing application.
+2024-07-01 13:46:46,400 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:46:52,858 - src.utils.logger - INFO - Closing application.
+2024-07-01 13:46:54,073 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:46:58,474 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:47:24,337 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:47:34,019 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:47:45,766 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:47:52,159 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:47:57,838 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:48:00,713 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:48:04,888 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:48:07,454 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:53:31,406 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:53:37,101 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:53:39,505 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:53:42,610 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:53:44,888 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:53:53,586 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:55:39,697 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:58:11,027 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:58:15,272 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:58:17,694 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:58:55,873 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:59:34,708 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:59:38,475 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:59:50,088 - src.utils.logger - INFO - Starting application.
+2024-07-01 13:59:56,699 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:00:08,126 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:01:22,555 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:01:25,983 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:02:25,974 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:02:29,009 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:03:28,707 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:03:35,671 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:03:54,788 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:04:27,556 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:04:46,065 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:05:14,748 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:05:35,719 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:05:42,756 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:05:45,757 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:05:48,813 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:06:01,274 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:06:22,811 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:06:25,350 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:06:35,139 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:07:03,844 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:07:06,886 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:08:20,561 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:08:28,928 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:08:35,576 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:09:18,185 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:09:20,453 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:09:22,651 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:09:24,999 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:09:31,345 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:09:33,678 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:09:37,890 - src.utils.logger - INFO - Starting application.
+2024-07-01 14:09:41,660 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:06:14,142 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:06:35,809 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:06:37,128 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:06:52,015 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:06:53,240 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:08:07,259 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:08:08,579 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:08:21,905 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:08:23,066 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:08:28,140 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:14:09,770 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:14:50,195 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:16:20,045 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:17:09,556 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:18:07,356 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:19:45,139 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:19:54,490 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:20:03,795 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:20:19,081 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:20:22,269 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:20:24,591 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:20:32,925 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:20:44,783 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:21:19,513 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:21:22,460 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:21:48,606 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:21:51,056 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:21:55,277 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:21:57,563 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:22:04,675 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:22:07,020 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:22:10,946 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:22:57,233 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:23:33,149 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:23:52,066 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:24:09,113 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:24:13,405 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:28:11,319 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:30:12,189 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:30:15,758 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:36:55,892 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:36:59,674 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:37:02,296 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:37:56,642 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:38:48,395 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:38:53,851 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:39:07,828 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:39:16,802 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:39:27,850 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:39:32,588 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:39:43,339 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:39:54,135 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:40:01,522 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:40:36,432 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:40:40,934 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:40:49,404 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:41:07,343 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:41:10,544 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:41:32,958 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:42:14,009 - src.utils.logger - INFO - Bird message received
+2024-07-01 17:42:14,011 - src.utils.logger - INFO - Received Message (from bird): content='Hey' uid='+13142952259' user_name='Bird User 2259' medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-01 17:42:15,509 - src.utils.logger - INFO - User has unauthenticated Google account.
+2024-07-01 17:42:15,509 - src.utils.logger - ERROR - Unexpected error when recieving message: 'GAuthConfig' object has no attribute 'GOOGLE_AUTH_SCOPE'
+2024-07-01 17:43:20,377 - src.utils.logger - INFO - Bird message received
+2024-07-01 17:43:20,378 - src.utils.logger - INFO - Received Message (from bird): content='Hey' uid='+13142952259' user_name='Bird User 2259' medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-01 17:43:21,334 - src.utils.logger - INFO - User has unauthenticated Google account.
+2024-07-01 17:43:21,334 - src.utils.logger - ERROR - Unexpected error when recieving message: 'GAuthConfig' object has no attribute 'GOOGLE_AUTH_SCOPE'
+2024-07-01 17:45:30,181 - src.utils.logger - INFO - Bird message received
+2024-07-01 17:45:30,182 - src.utils.logger - INFO - Received Message (from bird): content='Hey' uid='+13142952259' user_name='Bird User 2259' medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-01 17:45:31,460 - src.utils.logger - INFO - User has unauthenticated Google account.
+2024-07-01 17:45:31,461 - src.utils.logger - ERROR - Unexpected error when recieving message: 'GAuthConfig' object has no attribute 'GOOGLE_AUTH_SCOPE'
+2024-07-01 17:49:09,106 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:49:10,483 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:50:52,389 - src.utils.logger - INFO - Bird message received
+2024-07-01 17:50:52,390 - src.utils.logger - INFO - Received Message (from bird): content='Hi' uid='+13142952259' user_name='Bird User 2259' medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-01 17:50:53,694 - src.utils.logger - INFO - User has unauthenticated Google account.
+2024-07-01 17:50:53,694 - src.utils.logger - ERROR - Unexpected error when recieving message: 'GAuthConfig' object has no attribute 'GOOGLE_AUTH_SCOPE'
+2024-07-01 17:51:10,478 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:51:12,678 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:51:50,794 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:51:52,167 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:52:03,934 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:52:19,760 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:52:29,997 - src.utils.logger - INFO - Bird message received
+2024-07-01 17:52:29,997 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 17:53:32,438 - src.utils.logger - INFO - Bird message received
+2024-07-01 17:53:32,439 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 17:54:33,885 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:54:43,197 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:55:00,640 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:55:12,256 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:55:13,444 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:56:34,088 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:56:35,513 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:56:44,609 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:56:47,776 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:56:59,929 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:57:02,353 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:57:03,221 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:57:15,753 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:57:16,634 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:57:20,780 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:57:21,655 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:57:30,753 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:57:31,629 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:57:37,620 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:58:01,677 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:58:13,371 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:58:32,367 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:58:33,223 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:58:35,853 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:58:36,709 - src.utils.logger - INFO - Starting application.
+2024-07-01 17:59:00,163 - src.utils.logger - INFO - Closing application.
+2024-07-01 17:59:01,095 - src.utils.logger - INFO - Starting application.
+2024-07-01 18:01:34,058 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:35:21,794 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:36:50,336 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:36:50,641 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:36:51,578 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:36:53,296 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:36:57,004 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:37:16,317 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:37:17,455 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:37:26,263 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:37:27,335 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:37:43,713 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:37:44,848 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:37:55,266 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:37:58,301 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:37:59,189 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:38:35,380 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:38:36,480 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:38:40,625 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:38:41,594 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:38:50,993 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:38:51,958 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:38:54,155 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:38:59,257 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:39:01,107 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:39:16,168 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:39:36,145 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:39:52,678 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:40:50,053 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:41:28,194 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:41:29,922 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:41:33,258 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:41:34,143 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:41:37,782 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:41:38,655 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:41:49,976 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:41:50,884 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:42:44,646 - src.utils.logger - INFO - Closing application.
+2024-07-01 19:42:45,833 - src.utils.logger - INFO - Starting application.
+2024-07-01 19:43:11,349 - src.utils.logger - INFO - Bird message received
+2024-07-01 19:43:11,350 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 19:44:20,070 - src.utils.logger - INFO - Bird message received
+2024-07-01 19:44:20,071 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 19:46:51,547 - src.utils.logger - INFO - Bird message received
+2024-07-01 19:46:51,549 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 19:51:23,250 - src.utils.logger - INFO - Bird message received
+2024-07-01 19:51:23,252 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 19:59:53,302 - src.utils.logger - INFO - Starting application.
+2024-07-01 20:02:20,156 - src.utils.logger - INFO - Bird message received
+2024-07-01 20:02:20,156 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 20:03:23,592 - src.utils.logger - INFO - Bird message received
+2024-07-01 20:03:23,593 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 20:05:24,028 - src.utils.logger - INFO - Bird message received
+2024-07-01 20:05:24,029 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 20:09:51,550 - src.utils.logger - INFO - Bird message received
+2024-07-01 20:09:51,553 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 20:18:06,869 - src.utils.logger - INFO - Bird message received
+2024-07-01 20:18:06,879 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 20:33:07,336 - src.utils.logger - INFO - Bird message received
+2024-07-01 20:33:07,357 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 20:55:10,513 - src.utils.logger - INFO - Starting application.
+2024-07-01 20:55:57,331 - src.utils.logger - INFO - Bird message received
+2024-07-01 20:55:57,331 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 20:57:03,806 - src.utils.logger - INFO - Bird message received
+2024-07-01 20:57:03,806 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 20:59:35,204 - src.utils.logger - INFO - Bird message received
+2024-07-01 20:59:35,204 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 21:02:21,138 - src.utils.logger - INFO - Closing application.
+2024-07-01 21:02:22,010 - src.utils.logger - INFO - Starting application.
+2024-07-01 21:02:24,030 - src.utils.logger - INFO - Closing application.
+2024-07-01 21:02:24,915 - src.utils.logger - INFO - Starting application.
+2024-07-01 21:04:01,392 - src.utils.logger - INFO - Bird message received
+2024-07-01 21:04:01,393 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 21:14:36,885 - src.utils.logger - INFO - Bird message received
+2024-07-01 21:14:36,888 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 21:29:37,382 - src.utils.logger - INFO - Bird message received
+2024-07-01 21:29:37,383 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
