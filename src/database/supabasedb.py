@@ -13,7 +13,18 @@ class SupabaseDB(BaseDB):
         supabase = create_client(url, key)
         self.supabase = supabase
         self.user_table = UserTableName
+
+        # Variables to keep track of current chatroom
         self.user_id = None
+        self.room_id = None
+        self.agent_id = None
+
+        # Initialize table classes
+        self._users_table = None
+        self._agents_table = None
+        self._rooms_table = None
+        self._messages_table = None
+        self._preferences_table = None
 
     @classmethod
     def from_config(cls, config: SupabaseConfig):

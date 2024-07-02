@@ -7,6 +7,7 @@ from src.manager.models import Intents
 from src.manager.save.save import SaveManager
 from src.manager.signup.signup import SignupManager
 from src.manager.upload.upload import UploadManager
+from src.manager.cancel.cancel import CancelManager
 from src.messaging.basemessaging import BaseMessaging
 from src.messaging.models import Message, MessageType
 from src.utils.logger import logger

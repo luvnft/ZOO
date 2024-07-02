@@ -1,0 +1,55 @@
+PLATFORM_CONFIG:
+  TELEGRAM:
+    TELEGRAM_BOT_TOKEN: 
+  BIRD:
+    BIRD_API_URL: 
+    BIRD_ORGANIZATION_ID: 
+    BIRD_WORKSPACE_ID: 
+    BIRD_API_KEY: 
+    BIRD_SIGNING_KEY: 
+    BIRD_CHANNEL_ID: 
+
+DATABASE_CONFIG:
+  SUPABASE:
+    URL: 
+    KEY: 
+  CONSTANT_IDS:
+    TABLE_IDS:
+      USER: users
+      GAUTH: gauth
+      MESSAGE: messages
+    USER_IDS:
+      TELEGRAM: telegram_id
+      EMAIL: email_id
+    ID_COLUMN_NAME: id
+
+UPLOAD_CONFIG:
+  FOLDER_NAME: Life Tracking
+  FILE_NAME_FORMAT: "%m_%d_%y %H:%M"
+
+CANCEL_CONFIG:
+  ENABLED: false
+  REDIS_URL: redis://127.0.0.1
+
+LLM_CONFIG:
+  GEMINI:
+    API_KEY: ""
+  GROQ:
+    API_KEY: ""
+  OPENAI:
+    API_KEY: ""
+  ANTHROPIC:
+    API_KEY: ""
+  
+TOOLS_CONFIG:
+  CALENDAR:
+    GOOGLE:
+      GOOGLE_API_KEY: 
+      GOOGLE_CLIENT_ID: 
+      GOOGLE_CLIENT_SECRET: 
+      GOOGLE_AUTH_SCOPE:
+        - https://www.googleapis.com/auth/calendar
+        - https://www.googleapis.com/auth/drive.file
+    CALENDAR_NAME: Life Tracking
+    CALENDAR_DESCRIPTION: Use this calendar to track what you do day to day.
+

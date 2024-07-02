@@ -1,53 +1,70 @@
-# 🚀 Insert cool name
+# Mini 🧍
 
-Zapier for Agents - Go from 0-1 in minutes, not days.
+Minis are the first open-source digital humans. 🧍🧍‍♀🧍‍♂️
 
-## 🔧 Features
+Join us in building agents that are highly realistic, configurable, and versatile — from boyfriend to personal secretary.
 
-### Database
-- [x] Cloud-hosted Supabase
+Make your own `Twilio SMS` Mini powered by `Gemini LLM` with `Bing Search` & `Stripe Payment` in minutes, not weeks
 
-### LLMs Provided
+## ⭐ Features
+
+### Web Access
+- [x] Google Calendar
+- [x] Google Drive
+- [ ] Search
+
+### Behaviors
+- [x] Intent detection
+- [x] Auto DB
+- [ ] Task cancellation
+- [ ] Human-like memory
+- [ ] Preferences
+- [ ] Proactive messages
+- [ ] Scheduling
+- [ ] Vision
+
+### Channels
+- [x] Bird SMS
+- [x] Telegram
+- [ ] WhatsApp
+- [ ] Twilio
+- [ ] Phone calls
+
+### LLMs
 - [x] Gemini
 - [x] Groq
 - [x] OpenAI
 - [x] Anthropic
 
-### Tools
-- [x] Intent detection
-- [x] Auto DB
-- [ ] Human-like memory
-- [ ] Internet search
+## 🛣️ Roadmap
 
-### Messaging Providers
-- [x] Bird SMS
-- [x] Telegram
-- [ ] WhatsApp
-- [ ] Twilio
+- [ ] Make a master config file
+- [ ] Working boyfriend agent demo
+- [ ] Documentation/configuration guide
 
-## 🛠️ Setup
 
-### Prerequisites
-- Python 3.x
-- [ngrok](https://ngrok.com/)
+## 🛠️ Environment Setup
+Make sure Python and [ngrok](https://ngrok.com/) are installed.
 
-### Environment Setup
-1. Navigate to the repository, then create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Unix or MacOS
-   # venv\Scripts\activate.bat  # Windows cmd.exe
-   # venv\Scripts\Activate.ps1  # Windows PowerShell
-   ```
-2. Install [uv](https://github.com/astral-sh/uv):
+1. Navigate to the repository. Install [uv](https://github.com/astral-sh/uv):
    ```bash
    pip install uv
+   ```
+2. Create and activate a virtual environment:
+   ```bash
+   uv venv  # Create a virtual environment at .venv
+
+   # Activate environment. On macOS and Linux:
+   source .venv/bin/activate 
+   
+    # On Windows:
+   .venv\Scripts\activate
    ```
 3. Install dependencies:
    ```bash
    uv pip install -r requirements.txt
    ```
-4. Configure your local.yaml file
+4. Copy `local.template.yaml` to a new file called `local.yaml` in the same directory
 
 ## 🚀 Usage
 Run the project:
@@ -55,19 +72,21 @@ Run the project:
 python run.py
 ```
 
-Interact with the bot:
+Interact with the demo:
 - Add +1 (833) 819-1677 to contacts, or
 - Add @AIHealthCoachBot on Telegram
 
-## 📦 Dependencies
+## Dependencies
 Add new dependencies:
 ```bash
 uv pip install [package_name]
 uv pip freeze > requirements.txt
 ```
 
-## 🤝 Contributing
-See [Contributing Guidelines](CONTRIBUTING.md). (WIP)
+## Contributing
+(WIP)
 
-## 📄 License
-[MIT License](LICENSE)
+## License
+
+[MIT License](LICENSE.md).
+

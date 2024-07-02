@@ -2612,3 +2612,40 @@
 2024-07-01 21:14:36,888 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
 2024-07-01 21:29:37,382 - src.utils.logger - INFO - Bird message received
 2024-07-01 21:29:37,383 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 21:44:37,785 - src.utils.logger - INFO - Bird message received
+2024-07-01 21:44:37,786 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 21:59:38,264 - src.utils.logger - INFO - Bird message received
+2024-07-01 21:59:38,265 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 22:02:47,670 - src.utils.logger - INFO - Closing application.
+2024-07-01 22:02:48,952 - src.utils.logger - INFO - Starting application.
+2024-07-01 22:02:52,387 - src.utils.logger - INFO - Closing application.
+2024-07-01 22:02:53,316 - src.utils.logger - INFO - Starting application.
+2024-07-01 22:02:57,557 - src.utils.logger - INFO - Closing application.
+2024-07-01 22:02:58,499 - src.utils.logger - INFO - Starting application.
+2024-07-01 22:03:01,530 - src.utils.logger - INFO - Closing application.
+2024-07-01 22:03:02,469 - src.utils.logger - INFO - Starting application.
+2024-07-01 22:14:38,666 - src.utils.logger - INFO - Bird message received
+2024-07-01 22:14:38,666 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 22:29:39,079 - src.utils.logger - INFO - Bird message received
+2024-07-01 22:29:39,081 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-01 22:44:39,511 - src.utils.logger - INFO - Bird message received
+2024-07-01 22:44:39,513 - src.utils.logger - ERROR - Unexpected error when recieving message: Invalid Bird message format.
+2024-07-02 11:16:50,579 - src.utils.logger - INFO - Closing application.
+2024-07-02 11:16:53,538 - src.utils.logger - INFO - Starting application.
+2024-07-02 11:16:55,051 - src.utils.logger - INFO - Closing application.
+2024-07-02 11:16:56,012 - src.utils.logger - INFO - Starting application.
+2024-07-02 11:17:10,462 - src.utils.logger - INFO - Closing application.
+2024-07-02 11:17:11,362 - src.utils.logger - INFO - Starting application.
+2024-07-02 11:17:12,273 - src.utils.logger - INFO - Closing application.
+2024-07-02 11:17:13,212 - src.utils.logger - INFO - Starting application.
+2024-07-02 11:17:18,058 - src.utils.logger - INFO - Closing application.
+2024-07-02 11:17:18,968 - src.utils.logger - INFO - Starting application.
+2024-07-02 11:17:25,631 - src.utils.logger - INFO - Closing application.
+2024-07-02 11:17:26,570 - src.utils.logger - INFO - Starting application.
+2024-07-02 11:17:30,914 - src.utils.logger - INFO - Closing application.
+2024-07-02 11:17:31,817 - src.utils.logger - INFO - Starting application.
+2024-07-02 16:14:11,002 - src.utils.logger - INFO - Closing application.
+2024-07-02 16:14:12,286 - src.utils.logger - INFO - Starting application.
+2024-07-02 16:14:13,600 - src.utils.logger - INFO - Closing application.
+2024-07-02 16:14:14,449 - src.utils.logger - INFO - Starting application.
+2024-07-02 16:14:23,439 - src.utils.logger - INFO - Closing application.
