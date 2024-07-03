@@ -121,26 +121,26 @@ class TelegramMessage(BaseModel):
         _TelegramMessageDocument,
     ]
 
-class BirdMessage(BaseModel):
-    sender: Dict[str, Any]
-    channelId: str
-    body: Dict[str, Any]
-    message: str
-
 class MessageMedium(Enum):
     TELEGRAM = "telegram"
     BIRD = "bird"
-
 
 class MessageType(Enum):
     TEXT = "text"
     FILE = "file"
 
-
-class Message(BaseModel):
-    content: Union[TelegramMessage, BirdMessage, str]
+class TelegramMetadata(BaseModel):
     uid: Union[int, str]
     user_name: Optional[str]
+
+class BirdMetadata(BaseModel):
+    channel_id: str
+    phone_number: str
+
+# TODO: Add different Bird message types
+class Message(BaseModel):
+    content: Union[TelegramMessage, str]
+    metadata: Union[TelegramMetadata, BirdMetadata]
     medium: MessageMedium
     type: MessageType
 

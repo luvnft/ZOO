@@ -19,13 +19,11 @@ class CommunicateManager:
         self,
         messaging_service: BaseMessaging,
         message: Message,
-        uid: Union[int, str],
         database: SupabaseDB,
     ) -> None:
         self.messaging_service = messaging_service
         self.database = database
         self.message = message
-        self.uid = uid
         self.relevant_user_data = None
         self.chat = []
 
@@ -69,8 +67,8 @@ class CommunicateManager:
             self.chat + [HumanMessage(content=self.message.message.message.text)]
         ).content
 
-        self.database.append_row(
+        self.database.insert(
             config.DATABASE_CONFIG.CONSTANT_IDS.TABLE_IDS.MESSAGE,
             {"id": self.database.user_id, "from_bot": True, "message": response},
         )
-        return await self.messaging_service.send_message(response, self.uid)
+        return await self.messaging_service.send_message(response)

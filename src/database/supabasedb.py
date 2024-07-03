@@ -1,91 +1,89 @@
-from datetime import datetime
-from typing import Any, Dict, Optional, Union
-
+from typing import Any, Dict, Optional, Union, List, Type, TypeVar, Generic, Literal
+from pydantic import BaseModel
 from supabase import create_client
-
-from src.config.config import UserIDType, UserTableName
+from src.messaging.models import Message
+from src.config.config import UserIDType
 from src.database.basedb import BaseDB
-from src.database.models import SupabaseConfig
+from src.database.models import SupabaseConfig, TableModel, TABLE_MODEL_MAP
+from datetime import datetime
 
-# TODO: set db's room id
+T = TypeVar('T', bound=TableModel)
+
 class SupabaseDB(BaseDB):
     def __init__(self, url: str, key: str) -> None:
-        supabase = create_client(url, key)
-        self.supabase = supabase
-        self.user_table = UserTableName
-
-        # Variables to keep track of current chatroom
+        self.supabase = create_client(url, key)
         self.user_id = None
-        self.room_id = None
         self.agent_id = None
+        self.room_id = None
 
-        # Initialize table classes
-        self._users_table = None
-        self._agents_table = None
-        self._rooms_table = None
-        self._messages_table = None
-        self._preferences_table = None
+    def set_variables(self, room_id: int, user_id: int, agent_id: int) -> None:
+        self.room_id = room_id
+        self.user_id = user_id
+        self.agent_id = agent_id
 
     @classmethod
     def from_config(cls, config: SupabaseConfig):
         return cls(url=config.URL, key=config.KEY)
 
-    def append_row(
-        self,
-        table_name: str,
-        row_data: Dict[str, Any],
-    ):
-        data, count = self.supabase.table(table_name).insert(row_data).execute()
-        print(data, count)
-        return data, count
+    def insert(self, table_name: str, item: TableModel) -> TableModel:
+        data, _ = self.supabase.table(table_name).insert(item.model_dump()).execute()
+        return type(item)(**data[1][0]) if data and data[1] else None
 
-    def update_cell(
-        self,
-        table_name: str,
-        column_name: str,
-        new_value: Any,
-    ):
-        data, count = (
-            self.supabase.table(table_name)
-            .update({column_name: new_value})
-            .eq("id", self.user_id)
-            .execute()
-        )
-        return data, count
+    def update(self, table_name: str, item_id: int, item: TableModel) -> TableModel:
+        data, _ = self.supabase.table(table_name).update(item.model_dump()).eq("id", item_id).execute()
+        return type(item)(**data[1][0]) if data and data[1] else None
 
-    def set_user(
-        self,
-        uid: Union[str, int],
-        needs_conversion_from: Optional[UserIDType] = None,
-    ) -> bool:
-        if needs_conversion_from is not None:
-            data, count = (
-                self.supabase.table(self.user_table)
-                .select("id")
-                .eq(needs_conversion_from, uid)
-                .execute()
-            )
+    def get_row(self, table_name: str, **filters) -> Optional[TableModel]:
+        """
+        Fetch a single row from the specified table based on the given filters.
+        """
+        model = TABLE_MODEL_MAP[table_name]
+        query = self.supabase.table(table_name).select("*")
+        for key, value in filters.items():
+            query = query.eq(key, value)
+        
+        data, _ = query.limit(1).single().execute()
+        return model(**data[1]) if data and data[1] else None
 
-            if data[1] is None or len(data[1]) == 0:
-                return False
-            if len(data[1]) > 1:
-                raise ValueError(
-                    f"Multiple users found with {needs_conversion_from.value} ID: {uid}"
-                )
+    def get_multiple_rows(self, 
+                 table_name: str, 
+                 max_rows: int = 10, 
+                 from_time: Optional[datetime] = None, 
+                 order_by: str = "created_at",
+                 order_desc: bool = True,
+                 **filters) -> List[TableModel]:
+        """
+        Fetch multiple rows from the specified table based on the given filters and parameters.
+        """
+        model = TABLE_MODEL_MAP[table_name]
+        query = self.supabase.table(table_name).select("*")
 
-            uid = data[1][0]["id"]
+        # Apply filters
+        for key, value in filters.items():
+            query = query.eq(key, value)
 
-        self.user_id = uid
-        return True
-
-    def get_rows(self, table_name: str, max_rows: int = 10, from_time: datetime = None):
-        query = self.supabase.table(table_name).select("*").eq("id", self.user_id)
-
+        # Apply time filter if specified
         if from_time is not None:
             query = query.gte("created_at", from_time.isoformat())
 
-        query = query.order("created_at", desc=True).limit(max_rows)
+        # Apply ordering
+        query = query.order(order_by, desc=order_desc)
 
-        data, count = query.execute()
+        # Apply limit
+        query = query.limit(max_rows)
 
-        return data, count
+        data, _ = query.execute()
+
+        return [model(**item) for item in data[1]] if data and data[1] else []
+
+    def delete(self, table_name: str, item_id: int) -> bool:
+        data, _ = self.supabase.table(table_name).delete().eq("id", item_id).execute()
+        return bool(data and data[1])
+
+    def query(self, table_name: str, **filters) -> List[TableModel]:
+        model = TABLE_MODEL_MAP[table_name]
+        query = self.supabase.table(table_name).select("*")
+        for key, value in filters.items():
+            query = query.eq(key, value)
+        data, _ = query.execute()
+        return [model(**item) for item in data[1]] if data and data[1] else []

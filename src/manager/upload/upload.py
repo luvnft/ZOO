@@ -21,7 +21,6 @@ class UploadManager:
         self,
         messaging_service: BaseMessaging,
         message: Message,
-        uid: Union[int, str],
         database: SupabaseDB,
     ) -> None:
         self.messaging_service = messaging_service
@@ -75,8 +74,8 @@ class UploadManager:
             folder_name=config.UPLOAD_CONFIG.FOLDER_NAME,
             upload_url=self.upload_url,
         )
-        self.database.append_row(
+        self.database.insert(
             config.DATABASE_CONFIG.CONSTANT_IDS.TABLE_IDS.MESSAGE,
             {"id": self.database.user_id, "from_bot": True, "message": upload_message},
         )
-        return await self.messaging_service.send_message(upload_message, self.uid)
+        return await self.messaging_service.send_message(upload_message)

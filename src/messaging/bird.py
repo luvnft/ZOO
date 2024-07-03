@@ -12,7 +12,7 @@ from src.messaging.models import (
     MessageMedium,
     MessageType,
     MessageParsingError,
-    BirdMessage
+    BirdMetadata
 )
 from pydantic import ValidationError
 
@@ -25,8 +25,6 @@ class BirdSMSProvider(BaseMessaging):
         workspace_id: str,
         api_key: str,
         signing_key: str,
-        user_phone: str,
-        channel_id: str,
     ):
         """Initialize Bird credentials."""
         self._api_url = bird_url
@@ -37,11 +35,11 @@ class BirdSMSProvider(BaseMessaging):
         self._signing_key = signing_key
         self._organization_id = organization_id
         self._workspace_id = workspace_id
-        self._user_phone = user_phone
-        self._channel_id = channel_id
+        self._user_phone = None
+        self._channel_id = None
 
     @classmethod
-    def from_config(cls, config: BirdConfig, user_phone: Optional[str] = None, channel_id: Optional[str] = None) -> "BirdSMSProvider":
+    def from_config(cls, config: BirdConfig) -> "BirdSMSProvider":
         """Instantiate and return a BirdSMSProvider object."""
         bird_url = config.BIRD_API_URL
         organization_id = config.BIRD_ORGANIZATION_ID
@@ -51,7 +49,7 @@ class BirdSMSProvider(BaseMessaging):
         channel_id = config.BIRD_CHANNEL_ID
 
         return cls(
-            bird_url, organization_id, workspace_id, api_key, signing_key, user_phone, channel_id
+            bird_url, organization_id, workspace_id, api_key, signing_key
         )
     
     # TODO: Handle images and files
@@ -59,27 +57,30 @@ class BirdSMSProvider(BaseMessaging):
     async def receive_message(self, request_body: dict) -> Message:
         """Handle an incoming message from a Bird SMS sender."""
         try:
-            bird_message = BirdMessage(**request_body['payload'])
+            bird_message = request_body['payload']
         except ValidationError as e:
             print(f"Error parsing Bird message data: {e}")
             raise MessageParsingError("Invalid Bird message format.") from e
 
         try:
-            user_phone = bird_message.sender['contact']['identifierValue']
+            phone_number = bird_message.sender['contact']['identifierValue']
             channel_id = bird_message.channelId
+            self._user_phone = phone_number
+            self._channel_id = channel_id
             message_text = bird_message.body['text']['text']
 
-            user_name = f"Bird User {user_phone[-4:]}"  # Last 4 digits of phone number
+            metadata = BirdMetadata(
+                channel_id=channel_id,
+                phone_number=phone_number
+            )
 
             message_type = MessageType.TEXT
 
             return Message(
                 content=message_text,
-                uid=user_phone,  # Using phone number as UID
-                user_name=user_name,
+                metadata=metadata,
                 medium=MessageMedium.BIRD,
                 type=message_type,
-                raw_data=request_body
             )
         except KeyError as e:
             print(f"Error extracting data from Bird message: {e}")

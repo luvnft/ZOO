@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 from enum import Enum
-from typing import Optional, List
+from typing import Optional, List, Union, Dict, Type
 from pydantic import BaseModel, Field
 
 
@@ -37,30 +37,50 @@ class GAuthTable(BaseModel):
 #     telegram_id: Optional[int] = None
 #     email_id: Optional[str] = None
 
-
-
 class Tables(Enum):
+    """Tables available in the database."""
     AGENTS = "agents"
+    AGENTS__id = "id"
+    AGENTS__role = "role"
+    AGENTS__first_message = "first_message"
+
     USERS = "users"
+    USERS__id = "id"
+    USERS__created_at = "created_at"
+    USERS__phone_number = "phone_number"
+    USERS__birthday = "birthday"
+
     ROOMS = "rooms"
-    SESSIONS = "sessions"
+    ROOMS__id = "id"
+    ROOMS__created_at = "created_at"
+    ROOMS__user_id = "user_id"
+    ROOMS__agent_id = "agent_id"
+    ROOMS__bird_channel_id = "bird_channel_id"
+    ROOMS__telegram_chat_id = "telegram_chat_id"
+
     MESSAGES = "messages"
+    MESSAGES__id = "id"
+    MESSAGES__room_id = "room_id"
+    MESSAGES__session_id = "session_id"
+    MESSAGES__created_at = "created_at"
+    MESSAGES__from_user = "from_user"
+    MESSAGES__message = "message"
 
 def utc_now():
     return datetime.now(timezone.utc)
 
-class AgentData(BaseModel):
+class AgentModel(BaseModel):
     id: Optional[int] = None
     role: str
     first_message: str
 
-class UserData(BaseModel):
+class UserModel(BaseModel):
     id: Optional[int] = None
     created_at: datetime = Field(default_factory=utc_now)
     phone_number: Optional[str]
     birthday: Optional[datetime]
 
-class RoomData(BaseModel):
+class RoomModel(BaseModel):
     id: Optional[int] = None
     created_at: datetime = Field(default_factory=utc_now)
     user_id: int
@@ -68,19 +88,19 @@ class RoomData(BaseModel):
     bird_channel_id: Optional[str]
     telegram_chat_id: Optional[str]
 
-class SessionData(BaseModel):
+class MessageModel(BaseModel):
     id: Optional[int] = None
     room_id: int
-    created_at: datetime = Field(default_factory=utc_now)
-    ended_at: Optional[datetime] = None
-    is_processed: bool = False
-    topics: Optional[List[str]] = None
-    summary: Optional[str] = None
-
-class MessageData(BaseModel):
-    id: Optional[int] = None
-    room_id: int
-    session_id: int
     created_at: datetime = Field(default_factory=utc_now)
     from_user: bool
     message: str
+
+TableModel = Union[UserModel, AgentModel, MessageModel, RoomModel]
+
+TABLE_MODEL_MAP: Dict[str, Type[TableModel]] = {
+    "users": UserModel,
+    "rooms": RoomModel,
+    "agents": AgentModel,
+    "messages": MessageModel,
+}
+

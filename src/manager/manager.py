@@ -1,5 +1,4 @@
 from typing import Union
-
 from src.config.config import config
 from src.database.supabasedb import SupabaseDB
 from src.manager.communicate.communicate import CommunicateManager
@@ -15,44 +14,39 @@ from src.utils.logger import logger
 
 class Manager:
     def __init__(
-        self, messaging_service: BaseMessaging, message: Message, uid: Union[int, str]
+        self, messaging_service: BaseMessaging, message: Message
     ) -> None:
         self.messaging_service = messaging_service
         self.message = message
-        self.uid = uid
         self.database = SupabaseDB.from_config(config.DATABASE_CONFIG.SUPABASE)
 
         self.sm = SignupManager(
             messaging_service=self.messaging_service,
             message=self.message,
-            uid=self.uid,
             database=self.database,
         )
 
         self.up = UploadManager(
             messaging_service=self.messaging_service,
             message=self.message,
-            uid=self.uid,
             database=self.database,
         )
 
         self.cm = CommunicateManager(
             messaging_service=self.messaging_service,
             message=self.message,
-            uid=self.uid,
             database=self.database,
         )
 
         self.sv = SaveManager(
             messaging_service=self.messaging_service,
             message=self.message,
-            uid=self.uid,
             database=self.database,
         )
 
     async def find_intent(self) -> Intents:
-        if self.sm.verify_user_in_database() is False:
-            logger.info("User is not signed up yet.")
+        if self.sm.configure_room() is False:
+            logger.info("No room found.")
             self.sm.save_user_to_database()
             await self.sm.send_welcome_message()
             return Intents.USER_SIGNUP

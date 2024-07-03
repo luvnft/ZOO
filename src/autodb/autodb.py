@@ -175,7 +175,7 @@ class AutoDB:
                     new_value=list(action.data.values())[0],
                 )
             else:
-                output += database.append_row(
+                output += database.insert(
                     table_name=action.data_location.table.lower(),
                     row_data=action.data,
                 )

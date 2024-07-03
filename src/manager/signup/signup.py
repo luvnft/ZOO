@@ -4,11 +4,11 @@ from typing import Union
 from oauth2client.client import OAuth2Credentials
 
 from src.config.config import config
-from src.database.models import GAuthTable, UserTable
+from src.database.models import GAuthTable, UserTable, RoomModel, Tables, UserModel
 from src.database.supabasedb import SupabaseDB
 from src.gsuite.gauth.gauth import GAuth
 from src.messaging.basemessaging import BaseMessaging
-from src.messaging.models import Message, MessageMedium
+from src.messaging.models import Message, MessageMedium, TelegramMetadata, BirdMetadata
 from src.utils.logger import logger
 from src.utils.utils import render_jinja_template
 
@@ -18,21 +18,25 @@ class SignupManager:
         self,
         messaging_service: BaseMessaging,
         message: Message,
-        uid: Union[int, str],
         database: SupabaseDB,
     ) -> None:
         self.messaging_service = messaging_service
         self.database = database
         self.message = message
-        self.uid = uid
         self.creds = None
 
-    def verify_user_in_database(self) -> bool:
-        conversion = None
-        if self.message.medium == MessageMedium.TELEGRAM:
-            conversion = config.DATABASE_CONFIG.CONSTANT_IDS.USER_IDS.TELEGRAM
+    def configure_room(self) -> bool:
+        """Given message type, find room, and configure it in the database class."""
+        room: RoomModel = None
 
-        return self.database.set_user(uid=self.uid, needs_conversion_from=conversion)
+        if isinstance(self.message.metadata, TelegramMetadata):
+            room = self.database.get_row(Tables.ROOMS, **{Tables.ROOMS__user_id: self.message.metadata.uid})
+        elif isinstance(self.message.metadata, BirdMetadata):
+            user: UserModel = self.database.get_row(Tables.USERS, **{Tables.USERS__phone_number: self.message.metadata.phone_number})
+            room = self.database.get_row(Tables.ROOMS, **{Tables.ROOMS__bird_channel_id: self.message.metadata.channel_id, Tables.ROOMS__user_id: user.id})
+        
+        self.database.set_variables(room.id, room.user_id, room.agent_id)
+        return room.id
 
     def verify_gauth_in_database(self) -> bool:
         data, _ = self.database.get_rows(
@@ -64,9 +68,9 @@ class SignupManager:
     def save_user_to_database(self):
         if self.message.medium == MessageMedium.TELEGRAM:
             user_table = UserTable(
-                telegram_id=self.message.uid, username=self.message.user_name
+                telegram_id=self.message.metadata.uid, username=self.message.user_name
             )
-            return self.database.append_row(
+            return self.database.insert(
                 self.database.user_table, row_data=user_table.model_dump()
             )
         else:
@@ -80,11 +84,11 @@ class SignupManager:
             "src/manager/signup/templates",
             user_name=self.message.user_name,
         )
-        self.database.append_row(
+        self.database.insert(
             config.DATABASE_CONFIG.CONSTANT_IDS.TABLE_IDS.MESSAGE,
             {"id": self.database.user_id, "from_bot": True, "message": signup_message},
         )
-        return await self.messaging_service.send_message(signup_message, self.uid)
+        return await self.messaging_service.send_message(signup_message)
 
     async def auth_google(self):
         gauth = GAuth.from_config(config.CALENDAR_CONFIG.GOOGLE)
@@ -99,7 +103,7 @@ class SignupManager:
             logger.info(  # pylint: disable=W1203
                 f"An error occured while authenticating with Google: {e}"
             )
-            return await self.messaging_service.send_message(gauth_message, self.uid)
+            return await self.messaging_service.send_message(gauth_message)
 
         self.creds = creds
         gauth_table = config.DATABASE_CONFIG.CONSTANT_IDS.TABLE_IDS.GAUTH
@@ -114,7 +118,7 @@ class SignupManager:
         json_gauth[config.DATABASE_CONFIG.CONSTANT_IDS.ID_COLUMN_NAME] = (
             self.database.user_id
         )
-        self.database.append_row(gauth_table, json_gauth)
+        self.database.insert(gauth_table, json_gauth)
 
     async def send_successful_auth_message(self):
         signup_message = render_jinja_template(
@@ -122,8 +126,8 @@ class SignupManager:
             "src/manager/signup/templates",
             user_name=self.message.user_name,
         )
-        self.database.append_row(
+        self.database.insert(
             config.DATABASE_CONFIG.CONSTANT_IDS.TABLE_IDS.MESSAGE,
             {"id": self.database.user_id, "from_bot": True, "message": signup_message},
         )
-        return await self.messaging_service.send_message(signup_message, self.uid)
+        return await self.messaging_service.send_message(signup_message)

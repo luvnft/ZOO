@@ -22,13 +22,11 @@ class SaveManager:
         self,
         messaging_service: BaseMessaging,
         message: Message,
-        uid: Union[int, str],
         database: SupabaseDB,
     ) -> None:
         self.messaging_service = messaging_service
         self.database = database
         self.message = message
-        self.uid = uid
         self.creds = None
         self.saved_data = None
         self.saved_calendar_data = []
@@ -84,7 +82,7 @@ class SaveManager:
             return False
 
     def save_user_message_to_db(self):
-        self.database.append_row(
+        self.database.insert(
             config.DATABASE_CONFIG.CONSTANT_IDS.TABLE_IDS.MESSAGE,
             {
                 "id": self.database.user_id,
@@ -171,8 +169,8 @@ class SaveManager:
             "src/manager/save/templates",
             saved_information=saved_information.replace("\n", ""),
         )
-        self.database.append_row(
+        self.database.insert(
             config.DATABASE_CONFIG.CONSTANT_IDS.TABLE_IDS.MESSAGE,
             {"id": self.database.user_id, "from_bot": True, "message": saved_message},
         )
-        return await self.messaging_service.send_message(saved_message, self.uid)
+        return await self.messaging_service.send_message(saved_message)

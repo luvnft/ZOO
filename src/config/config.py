@@ -10,34 +10,89 @@ from src.database.models import ConstantIDConfig, SupabaseConfig, _UserIDConfig
 from src.gsuite.models import GAuthConfig
 from src.messaging.models import TelegramBotConfig, BirdConfig
 
+# There's gotta be a better way to do this (i used groq lol)
+
 
 class CalendarConfig(BaseModel):
-    GOOGLE: GAuthConfig
     CALENDAR_NAME: str
     CALENDAR_DESCRIPTION: str
 
+class DriveConfig(BaseModel):
+    FOLDER_NAME: str
+    FILE_NAME_FORMAT: str
+
+class GAuthConfig(BaseModel):
+    GOOGLE_API_KEY: str
+    GOOGLE_CLIENT_ID: str
+    GOOGLE_CLIENT_SECRET: str
+    GOOGLE_AUTH_SCOPE: list[str]
+    CALENDAR: CalendarConfig
+    DRIVE: DriveConfig
+
+class WebAccessConfig(BaseModel):
+    GOOGLE: GAuthConfig
+
+class TelegramBotConfig(BaseModel):
+    TELEGRAM_BOT_TOKEN: str
+
+class BirdConfig(BaseModel):
+    BIRD_API_URL: str
+    BIRD_ORGANIZATION_ID: str
+    BIRD_WORKSPACE_ID: str
+    BIRD_API_KEY: str
+    BIRD_SIGNING_KEY: str
+    BIRD_CHANNEL_ID: str
 
 class MessagingConfig(BaseModel):
     TELEGRAM: TelegramBotConfig
     BIRD: BirdConfig
 
+class SupabaseConfig(BaseModel):
+    URL: str
+    KEY: str
 
 class DatabaseConfig(BaseModel):
     SUPABASE: SupabaseConfig
-    CONSTANT_IDS: ConstantIDConfig
 
+class LLMConfig(BaseModel):
+    GEMINI: dict[str, str]
+    GROQ: dict[str, str]
+    OPENAI: dict[str, str]
+    ANTHROPIC: dict[str, str]
 
-class UploadConfig(BaseModel):
-    FOLDER_NAME: str
-    FILE_NAME_FORMAT: str
+class IntentDetectionConfig(BaseModel):
+    ENABLED: bool
+    MODEL: str
+    CONFIDENCE_THRESHOLD: float
 
+class HumanLikeMemoryConfig(BaseModel):
+    ENABLED: bool
+    STORAGE: str
+    MEMORY_LIFETIME: int
+    IMPORTANCE_THRESHOLD: float
 
-class AIAssistantConfig(BaseModel):
-    CALENDAR_CONFIG: CalendarConfig
+class InternetSearchConfig(BaseModel):
+    ENABLED: bool
+    API_KEY: str
+    SAFE_SEARCH: bool
+    RESULT_LIMIT: int
+
+class CancelConfig(BaseModel):
+    ENABLED: bool
+    REDIS_URL: str
+
+class BehaviorsConfig(BaseModel):
+    INTENT_DETECTION: IntentDetectionConfig
+    HUMAN_LIKE_MEMORY: HumanLikeMemoryConfig
+    INTERNET_SEARCH: InternetSearchConfig
+    CANCEL_CONFIG: CancelConfig
+
+class ZootopiaConfig(BaseModel):
     MESSAGING_CONFIG: MessagingConfig
     DATABASE_CONFIG: DatabaseConfig
-    UPLOAD_CONFIG: UploadConfig
-    GOOGLE_API_KEY: str
+    WEB_ACCESS_CONFIG: WebAccessConfig
+    LLM_CONFIG: LLMConfig
+    BEHAVIORS_CONFIG: BehaviorsConfig
 
 
 def set_environment_variables(config_data, prefix=""):
@@ -53,7 +108,7 @@ def set_environment_variables(config_data, prefix=""):
 
 
 def load_config(
-    config_path: str, set_env: bool = False, config_type: BaseModel = AIAssistantConfig
+    config_path: str, set_env: bool = False, config_type: type[ZootopiaConfig] = ZootopiaConfig
 ) -> BaseModel:
     """Loads configuration from a YAML file."""
 
@@ -71,7 +126,7 @@ def load_config(
 
 testing = True
 prefix = "src/config/" if testing else "/etc/secrets/"
-config = cast(AIAssistantConfig, load_config(f"{prefix}local.yaml", set_env=True))
+config = cast(ZootopiaConfig, load_config(f"{prefix}local.yaml", set_env=True))
 autodb_config = cast(
     AutoDBConfig, load_config("src/config/autodb.yaml", config_type=AutoDBConfig)
 )
@@ -79,4 +134,3 @@ autodb_config = cast(
 UserIDType = Enum(
     "UserIDType", [(field, field) for field in _UserIDConfig.model_fields]
 )
-UserTableName = config.DATABASE_CONFIG.CONSTANT_IDS.TABLE_IDS.USER

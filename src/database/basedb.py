@@ -9,7 +9,7 @@ class BaseDB(ABC):
     """
 
     @abstractmethod
-    def append_row(
+    def insert(
         self,
         table_name: str,
         row_data: Dict[str, Any],
@@ -17,7 +17,7 @@ class BaseDB(ABC):
         pass
 
     @abstractmethod
-    def update_cell(self, table_name: str, column_name: str, new_value: Any):
+    def update(self, table_name: str, item_id: str, item: Dict[str, Any]):
         pass
 
     @abstractmethod
