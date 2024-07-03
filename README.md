@@ -1,6 +1,6 @@
-# Zootopia - Zapier for Agents 🧍
+# Zootopia - Realistic Digital Humans
 
-Zootopians are the first open-source digital humans. 🧍🧍‍♀🧍‍♂️
+Zootopians are the first open-source digital humans. 🐰🦊🐻
 
 Join us in building characters that are highly realistic, configurable, and versatile — from boyfriend to personal secretary.
 
@@ -11,9 +11,9 @@ Make your own `Twilio SMS` Zootopian powered by `Gemini LLM` with `Bing Search` 
 ### Behaviors
 - [x] Intent detection
 - [x] Auto DB
-- [ ] Task cancellation
+- [ ] Think before sending (async)
 - [ ] Human-like memory
-- [ ] Preferences
+- [ ] Preference tracking
 - [ ] Proactive messages
 - [ ] Scheduling
 - [ ] Vision
@@ -23,6 +23,7 @@ Make your own `Twilio SMS` Zootopian powered by `Gemini LLM` with `Bing Search` 
 - [x] Telegram
 - [ ] WhatsApp
 - [ ] Twilio
+- [ ] Discord
 - [ ] Phone calls
 
 ### Web Access
