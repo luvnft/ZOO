@@ -1,10 +1,10 @@
-# Mini 🧍
+# Zootopia - Zapier for Agents 🧍
 
-Minis are the first open-source digital humans. 🧍🧍‍♀🧍‍♂️
+Zootopians are the first open-source digital humans. 🧍🧍‍♀🧍‍♂️
 
 Join us in building characters that are highly realistic, configurable, and versatile — from boyfriend to personal secretary.
 
-Make your own `Twilio SMS` Mini powered by `Gemini LLM` with `Bing Search` & `Stripe Payment` in minutes, not weeks ⚡
+Make your own `Twilio SMS` Zootopian powered by `Gemini LLM` with `Bing Search` & `Stripe Payment` in minutes, not weeks ⚡
 
 ## ⭐ Features
 
