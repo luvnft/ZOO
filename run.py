@@ -9,11 +9,11 @@ from fastapi import FastAPI
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 
-from src.config.config import config
-from src.messaging.telegrambot import TelegramBot
-from src.messaging.bird import BirdSMSProvider
-from src.routers.message import router as message_router
-from src.utils.logger import logger
+from zootopia.config.config import config
+from zootopia.messaging.telegrambot import TelegramBot
+from zootopia.messaging.bird import BirdSMSProvider
+from zootopia.routers.message import router as message_router
+from zootopia.utils.logger import logger
 
 
 class LoggingMiddleware(BaseHTTPMiddleware):
