@@ -2,16 +2,11 @@
 
 Minis are the first open-source digital humans. 🧍🧍‍♀🧍‍♂️
 
-Join us in building characters that are highly realistic, configurable, and versatile — from boyfriend to personal secretary. 
+Join us in building characters that are highly realistic, configurable, and versatile — from boyfriend to personal secretary.
 
 Make your own `Twilio SMS` Mini powered by `Gemini LLM` with `Bing Search` & `Stripe Payment` in minutes, not weeks ⚡
 
 ## ⭐ Features
-
-### Web Access
-- [x] Google Calendar
-- [x] Google Drive
-- [ ] Search
 
 ### Behaviors
 - [x] Intent detection
@@ -30,6 +25,11 @@ Make your own `Twilio SMS` Mini powered by `Gemini LLM` with `Bing Search` & `St
 - [ ] Twilio
 - [ ] Phone calls
 
+### Web Access
+- [x] Google Calendar
+- [x] Google Drive
+- [ ] Search
+
 ### LLMs
 - [x] Gemini
 - [x] Groq
@@ -41,7 +41,6 @@ Make your own `Twilio SMS` Mini powered by `Gemini LLM` with `Bing Search` & `St
 - [ ] Make a master config file
 - [ ] Working boyfriend agent demo
 - [ ] Documentation/configuration guide
-
 
 ## 🛠️ Environment Setup
 Ensure [ngrok](https://ngrok.com/) is installed.
