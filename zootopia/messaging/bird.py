@@ -3,13 +3,13 @@
 from typing import Any, Dict, Optional, cast
 import requests
 from ..utils.logger import logger
-from zootopia.messaging.basemessaging import BaseMessaging
+from zootopia.config.config import BirdConfig
+from zootopia.messaging.basemessaging  import MessageProviderBase
 from zootopia.messaging.models import (
     SendMessageError,
-    BirdConfig,
     WebhookError,
-    Message,
-    MessageMedium,
+    ZootopiaMessage,
+    MessageProvider,
     MessageType,
     MessageParsingError,
     BirdMetadata
@@ -17,7 +17,7 @@ from zootopia.messaging.models import (
 from pydantic import ValidationError
 
 
-class BirdSMSProvider(BaseMessaging):
+class BirdSMSProvider(MessageProviderBase):
     def __init__(
         self,
         bird_url: str,
@@ -25,6 +25,7 @@ class BirdSMSProvider(BaseMessaging):
         workspace_id: str,
         api_key: str,
         signing_key: str,
+        channel_id: str
     ):
         """Initialize Bird credentials."""
         self._api_url = bird_url
@@ -36,7 +37,7 @@ class BirdSMSProvider(BaseMessaging):
         self._organization_id = organization_id
         self._workspace_id = workspace_id
         self._user_phone = None
-        self._channel_id = None
+        self._channel_id = channel_id
 
     @classmethod
     def from_config(cls, config: BirdConfig) -> "BirdSMSProvider":
@@ -49,25 +50,26 @@ class BirdSMSProvider(BaseMessaging):
         channel_id = config.BIRD_CHANNEL_ID
 
         return cls(
-            bird_url, organization_id, workspace_id, api_key, signing_key
+            bird_url, organization_id, workspace_id, api_key, signing_key, channel_id
         )
     
     # TODO: Handle images and files
     @classmethod
-    async def receive_message(self, request_body: dict) -> Message:
+    def receive_message(self, request_body: dict) -> ZootopiaMessage:
         """Handle an incoming message from a Bird SMS sender."""
         try:
+            print(request_body['payload'])
             bird_message = request_body['payload']
         except ValidationError as e:
             print(f"Error parsing Bird message data: {e}")
             raise MessageParsingError("Invalid Bird message format.") from e
 
         try:
-            phone_number = bird_message.sender['contact']['identifierValue']
-            channel_id = bird_message.channelId
+            phone_number = bird_message['sender']['contact']['identifierValue']
+            channel_id = bird_message['channelId']
             self._user_phone =phone_number
             self._channel_id = channel_id
-            message_text = bird_message.body['text']['text']
+            message_text = bird_message['body']['text']['text']
 
             metadata = BirdMetadata(
                 channel_id=channel_id,
@@ -76,10 +78,10 @@ class BirdSMSProvider(BaseMessaging):
 
             message_type = MessageType.TEXT
 
-            return Message(
+            return ZootopiaMessage(
                 content=message_text,
                 metadata=metadata,
-                medium=MessageMedium.BIRD,
+                provider=MessageProvider.BIRD,
                 type=message_type,
             )
         except KeyError as e:

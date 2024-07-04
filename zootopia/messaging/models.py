@@ -3,19 +3,6 @@ from typing import List, Optional, Union, Dict, Any
 
 from pydantic import BaseModel
 
-
-class TelegramBotConfig(BaseModel):
-    TELEGRAM_BOT_TOKEN: str
-
-class BirdConfig(BaseModel):
-    BIRD_API_URL: str
-    BIRD_ORGANIZATION_ID: str
-    BIRD_WORKSPACE_ID: str
-    BIRD_API_KEY: str
-    BIRD_SIGNING_KEY: str
-    BIRD_CHANNEL_ID: str
-
-
 class _TelegramPhoto(BaseModel):
     file_id: str
     file_unique_id: str
@@ -121,7 +108,7 @@ class TelegramMessage(BaseModel):
         _TelegramMessageDocument,
     ]
 
-class MessageMedium(Enum):
+class MessageProvider(Enum):
     TELEGRAM = "telegram"
     BIRD = "bird"
 
@@ -132,16 +119,17 @@ class MessageType(Enum):
 class TelegramMetadata(BaseModel):
     uid: Union[int, str]
     user_name: Optional[str]
+    chat_id: Optional[str]
 
 class BirdMetadata(BaseModel):
     channel_id: str
     phone_number: str
 
 # TODO: Add different Bird message types
-class Message(BaseModel):
+class ZootopiaMessage(BaseModel):
     content: Union[TelegramMessage, str]
     metadata: Union[TelegramMetadata, BirdMetadata]
-    medium: MessageMedium
+    provider: MessageProvider
     type: MessageType
 
 

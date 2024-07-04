@@ -1,25 +1,30 @@
 from abc import ABC, abstractmethod
+from typing import List, Optional
+from zootopia.database.models import TableModel
 from datetime import datetime
-from typing import Any, Dict
-
 
 class BaseDB(ABC):
-    """
-    Base class for database operations.
-    """
-
     @abstractmethod
-    def insert(
-        self,
-        table_name: str,
-        row_data: Dict[str, Any],
-    ):
+    def insert(self, table_name: str, item: TableModel) -> TableModel:
         pass
 
     @abstractmethod
-    def update(self, table_name: str, item_id: str, item: Dict[str, Any]):
+    def update(self, table_name: str, item: TableModel, *conditions) -> TableModel:
         pass
 
     @abstractmethod
-    def get_rows(self, table_name: str, max_rows: int = 10, from_time: datetime = None):
+    def get_row(self, table_name: str, *conditions) -> Optional[TableModel]:
+        pass
+
+    @abstractmethod
+    def get_multiple_rows(self, table_name: str, max_rows: int = 10, from_time: Optional[datetime] = None, 
+                          order_by: str = "created_at", order_desc: bool = True, *conditions) -> List[TableModel]:
+        pass
+
+    @abstractmethod
+    def delete(self, table_name: str, *conditions) -> bool:
+        pass
+
+    @abstractmethod
+    def query(self, table_name: str, *conditions) -> List[TableModel]:
         pass

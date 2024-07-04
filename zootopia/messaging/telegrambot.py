@@ -9,15 +9,14 @@ import aiohttp
 import telegram
 from fastapi import Request
 from pydantic import ValidationError
-
-from zootopia.messaging.basemessaging import BaseMessaging
+from zootopia.config.config import TelegramConfig
+from zootopia.messaging.basemessaging  import MessageProviderBase
 from zootopia.messaging.models import (
-    Message,
-    MessageMedium,
+    ZootopiaMessage,
+    MessageProvider,
     MessageParsingError,
     MessageType,
     SendMessageError,
-    TelegramBotConfig,
     TelegramMessage,
     WebhookError,
     _TelegramMessageDocument,
@@ -27,28 +26,34 @@ from zootopia.messaging.models import (
 from zootopia.utils.logger import logger
 
 
-class TelegramBot(BaseMessaging):
+class TelegramBot(MessageProviderBase):
     def __init__(self, token: str):
         """Initialize the Telegram Bot messaging service."""
         self._bot = telegram.Bot(token=token)
         self._user_id = None
 
     @classmethod
-    def from_config(cls, config: TelegramBotConfig) -> "TelegramBot":
+    def from_config(cls, config: TelegramConfig) -> "TelegramBot":
         """Instantiate and return a TelegramBot object."""
         token = config.TELEGRAM_BOT_TOKEN
         return cls(token)
 
     @classmethod
-    async def receive_message(self, request: Request) -> Message:
+    def receive_message(cls, request_body) -> ZootopiaMessage:
         """Handle an incoming message from a Telegram sender."""
         try:
-            # Fix double quotes issue and parse request body
-            request_body = json.loads(
-                (await request.body()).decode().replace('"from"', '"from_')
-            )
+            # Parse request body
+            if isinstance(request_body, str):
+                request_body = json.loads(request_body.replace('"from"', '"from_'))
+            elif isinstance(request_body, dict):
+                # If it's already a dict, just replace the 'from' key
+                if 'from' in request_body:
+                    request_body['from_'] = request_body.pop('from')
+            else:
+                raise ValueError("Unsupported request_body type")
+
             telegram_message = TelegramMessage(**request_body)
-        except ValidationError as e:
+        except (json.JSONDecodeError, ValidationError) as e:
             print(f"Error parsing Telegram message data: {e}")
             raise MessageParsingError("Invalid Telegram message format.") from e
 
@@ -66,15 +71,16 @@ class TelegramBot(BaseMessaging):
 
             metadata = TelegramMetadata(
                 uid=telegram_message.message.from_.id,
-                user_name=user_name
+                user_name=user_name,
+                chat_id=telegram_message.message.chat.id
             )
 
-            self._user_id = telegram_message.message.from_.id
+            cls._user_id = telegram_message.message.from_.id
 
-            return Message(
+            return ZootopiaMessage(
                 content=telegram_message,
                 metadata=metadata,
-                medium=MessageMedium.TELEGRAM,
+                provider=MessageProvider.TELEGRAM,
                 type=message_type,
             )
         except AttributeError as e:

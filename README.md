@@ -1,17 +1,29 @@
-# Zootopia - Realistic Digital Humans
+<h1 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" />
+    <img height="120" src="zootopia_banner.jpg"/>
+  </picture>
+ <br />
+</h1>
+<p align="center">
+Zootopians are the First Open-Source Digital Humans 🐰🦊🐻
+</p>
+<p align="center">
+  <a href="https://discord.gg/w7p3U9wn"><img src="https://img.shields.io/discord/1217283257469501450?logo=discord&label=discord"/></a>
+  <a href="https://github.com/AIDropout/ZOOTOPIA"><img src="https://img.shields.io/github/stars/AIDropout/ZOOTOPIA" /></a>
+  <a href="https://github.com/AIDropout/ZOOTOPIA/blob/main/LICENSE"><img src="https://img.shields.io/github/license/AIDropout/ZOOTOPIA"/></a>
+</p>
 
-Zootopians are the first open-source digital humans. 🐰🦊🐻
-
-Join us in building characters that are highly realistic, configurable, and versatile — from boyfriend to personal secretary.
+Help us build characters that are highly convincing, customizable, and dynamic — from boyfriend to personal secretary.
 
 Make your own `Twilio SMS` Zootopian powered by `Gemini LLM` with `Bing Search` & `Stripe Payment` in minutes, not weeks ⚡
 
-## ⭐ Features
+## 🌆 Features
 
 ### Behaviors
 - [x] Intent detection
 - [x] Auto DB
-- [ ] Think before sending (async)
+- [ ] Not responding to every single message (async)
 - [ ] Human-like memory
 - [ ] Preference tracking
 - [ ] Proactive messages
@@ -23,7 +35,6 @@ Make your own `Twilio SMS` Zootopian powered by `Gemini LLM` with `Bing Search` 
 - [x] Telegram
 - [ ] WhatsApp
 - [ ] Twilio
-- [ ] Discord
 - [ ] Phone calls
 
 ### Web Access
@@ -43,33 +54,49 @@ Make your own `Twilio SMS` Zootopian powered by `Gemini LLM` with `Bing Search` 
 - [ ] Working boyfriend agent demo
 - [ ] Documentation/configuration guide
 
-## 🛠️ Environment Setup
-Ensure [ngrok](https://ngrok.com/) is installed.
 
-1. Create a venv:
-   - `python -m venv venv`
-2. Activate venv:
-   - `source venv/bin/activate` (bash/zsh)
-   - `venv/Scripts\activate.bat` (cmd.exe)
-   - `venv/Scripts\activate.ps1` (PowerShell)
-3. Install dependencies:
-   - `pip install -r requirements.txt`
-4. Add to `requirements.txt`:
-   - add independent dependencies to the text file
-   - or `pip freeze > requirements.txt`
+## 🛠️ Environment Setup
+Make sure Python and [ngrok](https://ngrok.com/) are installed.
+
+   ```bash
+   # 1 Navigate to the repository. Install [uv](https://github.com/astral-sh/uv):
+   pip install uv 
+
+   # 2. Create a virtual environment at .venv
+   uv venv  
+
+   # 3. Activate environment. 
+   source .venv/bin/activate # macOS and Linux
+   .venv\Scripts\activate # Windows
+
+   # 4. Install dependencies  
+   uv pip install -r requirements.txt
+
+   ```
 
 Copy `local.template.yaml` to a new file called `local.yaml` in the same directory
 
 ## 🚀 Usage
-Run `python run.py`
+Run the project:
+```bash
+python run.py
+```
 
-- Add +1 (833) 819-1677 or download telegram and add @AIHealthCoachBot
-- start chatting
+Interact with the demo:
+- Add +1 (833) 819-1677 to contacts, or
+- Add @AIHealthCoachBot on Telegram
+
+## Dependencies
+Add new dependencies:
+```bash
+uv pip install [package_name]
+uv pip freeze > requirements.txt
+```
 
 ## Contributing
 (WIP)
 
 ## License
 
-[MIT License](LICENSE).
+[MIT License](LICENSE.md).
 

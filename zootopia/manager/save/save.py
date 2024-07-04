@@ -11,8 +11,8 @@ from zootopia.intent.intent import IntentDetector
 from zootopia.intent.models import IntentFilters
 from zootopia.langchain.llm import LLM
 from zootopia.langchain.models import LLMConfig, LLMNames, LLMProviders
-from zootopia.messaging.basemessaging import BaseMessaging
-from zootopia.messaging.models import Message
+from zootopia.messaging.basemessaging  import MessageProviderBase
+from zootopia.messaging.models import ZootopiaMessage
 from zootopia.utils.logger import logger
 from zootopia.utils.utils import render_jinja_template
 
@@ -20,8 +20,8 @@ from zootopia.utils.utils import render_jinja_template
 class SaveManager:
     def __init__(
         self,
-        messaging_service: BaseMessaging,
-        message: Message,
+        messaging_service: MessageProviderBase,
+        message: ZootopiaMessage,
         database: SupabaseDB,
     ) -> None:
         self.messaging_service = messaging_service
