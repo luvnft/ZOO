@@ -1,23 +1,22 @@
+"""Configures room info in the database class"""
 from datetime import datetime, timezone
 from typing import Union
-
 from oauth2client.client import OAuth2Credentials
-
 from zootopia.config.config import config
-from zootopia.database.models import GAuthTable, UserTable, RoomModel, Tables, UserModel
+from zootopia.database.models import GAuthTable, Tables, UserModel, AgentModel, RoomModel
 from zootopia.database.supabasedb import SupabaseDB
 from zootopia.gsuite.gauth.gauth import GAuth
-from zootopia.messaging.basemessaging import BaseMessaging
-from zootopia.messaging.models import Message, MessageMedium, TelegramMetadata, BirdMetadata
+from zootopia.messaging.basemessaging  import MessageProviderBase
+from zootopia.messaging.models import ZootopiaMessage, MessageProvider, TelegramMetadata, BirdMetadata
 from zootopia.utils.logger import logger
 from zootopia.utils.utils import render_jinja_template
 
 
-class SignupManager:
+class AuthManager:
     def __init__(
         self,
-        messaging_service: BaseMessaging,
-        message: Message,
+        messaging_service: MessageProviderBase,
+        message: ZootopiaMessage,
         database: SupabaseDB,
     ) -> None:
         self.messaging_service = messaging_service
@@ -25,19 +24,6 @@ class SignupManager:
         self.message = message
         self.creds = None
 
-    def configure_room(self) -> bool:
-        """Given message type, find room, and configure it in the database class."""
-        room: RoomModel = None
-
-        if isinstance(self.message.metadata, TelegramMetadata):
-            room = self.database.get_row(Tables.ROOMS, **{Tables.ROOMS__user_id: self.message.metadata.uid})
-
-        elif isinstance(self.message.metadata, BirdMetadata):
-            user: UserModel = self.database.get_row(Tables.USERS, **{Tables.USERS__phone_number: self.message.metadata.phone_number})
-            room = self.database.get_row(Tables.ROOMS, **{Tables.ROOMS__bird_channel_id: self.message.metadata.channel_id, Tables.ROOMS__user_id: user.id})
-        
-        self.database.set_variables(room.id, room.user_id, room.agent_id)
-        return room.id
 
     def verify_gauth_in_database(self) -> bool:
         data, _ = self.database.get_rows(
@@ -65,19 +51,6 @@ class SignupManager:
 
         self.creds = creds
         return True
-
-    def save_user_to_database(self):
-        if self.message.medium == MessageMedium.TELEGRAM:
-            user_table = UserTable(
-                telegram_id=self.message.metadata.uid, username=self.message.user_name
-            )
-            return self.database.insert(
-                self.database.user_table, row_data=user_table.model_dump()
-            )
-        else:
-            raise NotImplementedError(
-                f"SignupManager not configured for {self.message.medium} messages yet."
-            )
 
     async def send_welcome_message(self):
         signup_message = render_jinja_template(

@@ -10,8 +10,8 @@ from zootopia.config.config import config
 from zootopia.database.supabasedb import SupabaseDB
 from zootopia.gsuite.gcal.gcal import GCal
 from zootopia.gsuite.gdrive.gdrive import GDrive
-from zootopia.messaging.basemessaging import BaseMessaging
-from zootopia.messaging.models import Message
+from zootopia.messaging.basemessaging  import MessageProviderBase
+from zootopia.messaging.models import ZootopiaMessage
 from zootopia.messaging.telegrambot import TelegramBot
 from zootopia.utils.utils import render_jinja_template
 
@@ -19,14 +19,13 @@ from zootopia.utils.utils import render_jinja_template
 class UploadManager:
     def __init__(
         self,
-        messaging_service: BaseMessaging,
-        message: Message,
+        messaging_service: MessageProviderBase,
+        message: ZootopiaMessage,
         database: SupabaseDB,
     ) -> None:
         self.messaging_service = messaging_service
         self.database = database
         self.message = message
-        self.uid = uid
         self.creds = None
         self.upload_url = None
 

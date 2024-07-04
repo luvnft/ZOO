@@ -1,6 +1,6 @@
 import os
 from enum import Enum
-from typing import cast
+from typing import cast, Optional, List
 
 import yaml
 from pydantic import BaseModel, ValidationError
@@ -8,10 +8,6 @@ from pydantic import BaseModel, ValidationError
 from zootopia.autodb.models import AutoDBConfig
 from zootopia.database.models import ConstantIDConfig, SupabaseConfig, _UserIDConfig
 from zootopia.gsuite.models import GAuthConfig
-from zootopia.messaging.models import TelegramBotConfig, BirdConfig
-
-# There's gotta be a better way to do this (i used groq lol)
-
 
 class CalendarConfig(BaseModel):
     CALENDAR_NAME: str
@@ -25,14 +21,14 @@ class GAuthConfig(BaseModel):
     GOOGLE_API_KEY: str
     GOOGLE_CLIENT_ID: str
     GOOGLE_CLIENT_SECRET: str
-    GOOGLE_AUTH_SCOPE: list[str]
+    GOOGLE_AUTH_SCOPE: List[str]
     CALENDAR: CalendarConfig
     DRIVE: DriveConfig
 
 class WebAccessConfig(BaseModel):
     GOOGLE: GAuthConfig
 
-class TelegramBotConfig(BaseModel):
+class TelegramConfig(BaseModel):
     TELEGRAM_BOT_TOKEN: str
 
 class BirdConfig(BaseModel):
@@ -44,7 +40,7 @@ class BirdConfig(BaseModel):
     BIRD_CHANNEL_ID: str
 
 class MessagingConfig(BaseModel):
-    TELEGRAM: TelegramBotConfig
+    TELEGRAM: TelegramConfig
     BIRD: BirdConfig
 
 class SupabaseConfig(BaseModel):
@@ -61,38 +57,28 @@ class LLMConfig(BaseModel):
     ANTHROPIC: dict[str, str]
 
 class IntentDetectionConfig(BaseModel):
-    ENABLED: bool
     MODEL: str
-    CONFIDENCE_THRESHOLD: float
 
 class HumanLikeMemoryConfig(BaseModel):
-    ENABLED: bool
-    STORAGE: str
-    MEMORY_LIFETIME: int
-    IMPORTANCE_THRESHOLD: float
+    MODEL: str
 
-class InternetSearchConfig(BaseModel):
-    ENABLED: bool
-    API_KEY: str
-    SAFE_SEARCH: bool
-    RESULT_LIMIT: int
-
-class CancelConfig(BaseModel):
-    ENABLED: bool
+class AsyncConfig(BaseModel):
     REDIS_URL: str
 
 class BehaviorsConfig(BaseModel):
+    NAME: str
+    PROMPT: str
     INTENT_DETECTION: IntentDetectionConfig
     HUMAN_LIKE_MEMORY: HumanLikeMemoryConfig
-    INTERNET_SEARCH: InternetSearchConfig
-    CANCEL_CONFIG: CancelConfig
+    INTERNET_ACCESS: Optional[dict]
+    ASYNC_CONFIG: AsyncConfig
 
 class ZootopiaConfig(BaseModel):
     MESSAGING_CONFIG: MessagingConfig
     DATABASE_CONFIG: DatabaseConfig
-    WEB_ACCESS_CONFIG: WebAccessConfig
     LLM_CONFIG: LLMConfig
     BEHAVIORS_CONFIG: BehaviorsConfig
+    WEB_ACCESS_CONFIG: WebAccessConfig
 
 
 def set_environment_variables(config_data, prefix=""):

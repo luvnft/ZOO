@@ -3,10 +3,10 @@ from typing import Optional
 
 from fastapi import Request
 
-from zootopia.messaging.models import Message
+from zootopia.messaging.models import ZootopiaMessage
 
 
-class BaseMessaging(ABC):
+class MessageProviderBase(ABC):
     @classmethod
     @abstractmethod
     def from_config(cls, config):
@@ -15,7 +15,7 @@ class BaseMessaging(ABC):
 
     @classmethod
     @abstractmethod
-    async def receive_message(cls, request: Request) -> Message:
+    async def receive_message(cls, request: Request) -> ZootopiaMessage:
         """Handle an incoming message from a sender."""
         pass
 

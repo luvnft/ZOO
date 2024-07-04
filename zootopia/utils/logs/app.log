@@ -2649,3 +2649,1008 @@
 2024-07-02 16:14:13,600 - zootopia.utils.logger - INFO - Closing application.
 2024-07-02 16:14:14,449 - zootopia.utils.logger - INFO - Starting application.
 2024-07-02 16:14:23,439 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:32:50,209 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:36:47,967 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:36:49,060 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:36:49,466 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:36:50,329 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:36:53,966 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:36:54,819 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:36:56,840 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:36:57,723 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:36:59,439 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:37:00,309 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:37:03,948 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:37:04,832 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:37:47,363 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:37:52,588 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:37:55,218 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:37:57,229 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:39:36,740 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:40:25,947 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:40:34,598 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:40:41,267 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:40:42,134 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:40:55,792 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:40:56,630 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:41:03,505 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:41:04,390 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:41:36,009 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:41:36,885 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:41:48,532 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:41:58,163 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:41:58,163 - zootopia.utils.logger - ERROR - Unexpected error when recieving message: 'dict' object has no attribute 'sender'
+2024-07-04 10:42:26,633 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:42:47,853 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:42:47,856 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:43:02,379 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:43:16,346 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:43:17,225 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:43:18,843 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:43:19,716 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:43:28,183 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:43:56,331 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:44:15,295 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:44:16,168 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:44:27,438 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:44:45,681 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:44:56,083 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:45:04,372 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:45:11,498 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:45:18,317 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:45:19,180 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:45:20,697 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:45:21,578 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:45:23,831 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:45:26,025 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:45:26,913 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:45:28,891 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:45:34,843 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:46:15,204 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:46:21,492 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:46:22,615 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:46:30,788 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:46:30,792 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:46:31,310 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:46:31,310 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:46:43,341 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:46:43,341 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:46:47,098 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:46:47,098 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:47:22,950 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:47:24,119 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:47:32,001 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:47:32,904 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:47:36,764 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:47:36,765 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:47:44,217 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:47:44,218 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:47:50,309 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:47:50,309 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:48:16,040 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:48:16,944 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:48:29,213 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:48:29,213 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:48:52,658 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:48:52,659 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:48:57,060 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:48:58,216 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:49:00,857 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:49:00,858 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:49:01,668 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:49:01,669 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:49:33,661 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:49:33,662 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:50:00,962 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:50:00,963 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:50:12,088 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:50:14,417 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:50:22,810 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:50:23,731 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:50:24,338 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 10:50:25,206 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 10:50:42,259 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:50:42,259 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:51:09,208 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:51:09,209 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:51:40,111 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:51:40,112 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:51:47,498 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:51:47,498 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:51:58,203 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:51:58,204 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:52:20,836 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:52:20,836 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:53:03,096 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:53:03,097 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:53:08,334 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:53:08,334 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:55:03,407 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 10:55:03,409 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 10:55:41,116 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:00:18,686 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:00:18,691 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:00:18,691 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:00:18,700 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:00:18,701 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:00:18,706 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:00:18,706 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:00:26,700 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:00:26,700 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:00:50,435 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:00:51,282 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:00:56,438 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:00:57,353 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:01:32,561 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:01:32,562 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:01:36,931 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:01:36,931 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:01:47,325 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:01:47,326 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:02:59,101 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:02:59,103 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:04:13,927 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:04:13,928 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:04:36,743 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:04:37,875 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:04:41,310 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:04:42,183 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:04:44,812 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:04:45,672 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:05:00,425 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:05:00,426 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:06:05,905 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:06:05,907 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:08:33,117 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:08:33,118 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:08:33,384 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:08:33,384 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:10:02,615 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:10:03,827 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:10:05,443 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:10:06,318 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:10:26,024 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:10:27,068 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:10:29,091 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:10:29,993 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:10:51,005 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:10:51,994 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:10:53,307 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:10:54,259 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:10:58,126 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:10:58,126 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:11:14,371 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:11:15,346 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:11:17,266 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:11:18,113 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:11:58,117 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:11:58,118 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:13:08,349 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:13:08,349 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:13:15,820 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:13:15,820 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:13:43,543 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:13:44,642 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:13:58,227 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:13:58,228 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:13:59,362 - zootopia.utils.logger - INFO - User needs to be created
+2024-07-04 11:14:54,111 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:15:00,790 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:15:09,811 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:15:09,811 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:15:11,233 - zootopia.utils.logger - INFO - User needs to be created
+2024-07-04 11:15:11,242 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:15:11,242 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:15:12,330 - zootopia.utils.logger - INFO - User needs to be created
+2024-07-04 11:15:16,411 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:15:16,411 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:15:17,571 - zootopia.utils.logger - INFO - User needs to be created
+2024-07-04 11:15:19,213 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:15:19,214 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:15:20,336 - zootopia.utils.logger - INFO - User needs to be created
+2024-07-04 11:15:27,202 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:15:27,203 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:15:28,326 - zootopia.utils.logger - INFO - User needs to be created
+2024-07-04 11:15:35,802 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:15:36,670 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:15:38,189 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:15:39,039 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:15:51,205 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:15:51,206 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:16:20,811 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:16:21,935 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:16:21,938 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:16:21,938 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:16:32,969 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:16:32,969 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:16:34,783 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:16:39,897 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:16:39,899 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:16:39,900 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:16:42,586 - zootopia.utils.logger - INFO - User needs to be created
+2024-07-04 11:16:42,689 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:16:43,523 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:16:47,759 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:16:47,760 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:16:48,925 - zootopia.utils.logger - INFO - User needs to be created
+2024-07-04 11:16:56,302 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:16:58,621 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:16:58,624 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:16:58,624 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:17:00,887 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:17:01,770 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:17:25,674 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:17:25,675 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:17:53,085 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:17:54,185 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:17:59,576 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:17:59,577 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:18:35,924 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:18:35,924 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:19:14,430 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:19:14,431 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:19:37,948 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:19:37,948 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:19:57,835 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:19:58,944 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:20:26,937 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:20:26,938 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:20:37,685 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:20:39,804 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:20:40,612 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 11:20:41,486 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 11:21:55,237 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:21:55,238 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:22:32,966 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:22:32,966 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:23:29,531 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:23:29,532 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:23:33,462 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:23:33,462 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:24:25,546 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:24:25,547 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:25:58,830 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:25:58,831 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:29:20,661 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:29:20,662 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:30:20,761 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:30:20,762 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:30:28,699 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:30:28,699 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:31:30,446 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:31:30,447 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:31:34,810 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:31:34,810 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:31:42,917 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:31:42,918 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:31:49,338 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:31:49,338 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:32:59,394 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:32:59,396 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:33:02,249 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:33:02,250 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:33:03,224 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:33:03,224 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:34:18,543 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:34:18,544 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:36:57,008 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:36:57,009 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:38:34,971 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:38:34,972 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:53:36,773 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:53:36,775 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:56:00,590 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:56:00,591 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 11:59:22,607 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 11:59:22,608 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:00:23,262 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:00:23,263 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:00:30,162 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:00:30,163 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:01:32,316 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:01:32,317 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:01:36,411 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:01:36,412 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:01:44,407 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:01:44,408 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:01:51,878 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:01:51,878 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:03:01,197 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:03:01,198 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:03:03,609 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:03:03,609 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:03:04,730 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:03:04,731 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:04:20,453 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:04:20,455 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:06:58,935 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:06:58,935 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:08:38,522 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:08:38,524 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:11:02,595 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:11:02,596 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:14:25,403 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:14:25,404 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:15:25,352 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:15:25,354 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:15:31,578 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:15:31,578 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:16:34,462 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:16:34,463 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:16:38,350 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:16:38,351 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:16:46,760 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:16:46,760 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:16:54,629 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:16:54,629 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:18:04,304 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:18:04,304 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:18:05,645 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:18:05,646 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:18:06,700 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:18:06,701 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:19:22,450 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:19:22,451 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:22:02,027 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:22:02,029 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:23:40,623 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:23:40,623 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:26:04,309 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:26:04,310 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:26:15,040 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:26:17,470 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:26:23,028 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:26:23,940 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:26:40,201 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:26:41,288 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:27:07,256 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:27:08,101 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:27:22,450 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:27:23,294 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:29:17,862 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:29:18,936 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:29:38,034 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:29:38,926 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:30:13,172 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:30:14,231 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:30:14,938 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:30:15,845 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:30:27,581 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:30:27,581 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:30:34,226 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:30:34,227 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:31:06,428 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:31:07,275 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:31:10,510 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:31:11,351 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:31:15,499 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:31:16,354 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:31:36,496 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:31:36,497 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:31:39,737 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:31:40,602 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:31:40,605 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:31:40,605 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:31:50,206 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:31:50,206 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:31:52,042 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:31:52,917 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:31:56,157 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:31:56,158 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:31:58,504 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:31:59,361 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:32:01,584 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:32:02,470 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:32:03,479 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:32:04,416 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:32:05,226 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:32:06,073 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:32:07,388 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:32:08,249 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:32:09,362 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:32:10,264 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:32:24,203 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:32:25,078 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:32:30,128 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:32:30,974 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:32:44,613 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:32:45,565 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:32:47,485 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:32:48,350 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:32:49,867 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:32:50,728 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:33:01,841 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:33:02,694 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:33:06,091 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:33:06,092 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:33:08,750 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:33:09,620 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:33:09,623 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:33:09,623 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:33:11,301 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:33:13,287 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:33:15,613 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:33:16,458 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:33:53,537 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:34:19,330 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:34:25,494 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:34:26,345 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:34:26,349 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:34:26,349 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:34:28,165 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:34:29,041 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:34:33,288 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:34:38,024 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:35:05,301 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:35:06,191 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:35:09,629 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:35:10,468 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:35:12,589 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:35:13,433 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:35:14,749 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:35:15,603 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:35:17,221 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:35:18,146 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:35:24,204 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:35:25,072 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:35:28,306 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:35:29,123 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:36:09,738 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:36:16,304 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:36:23,683 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:36:24,584 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:36:25,899 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:36:26,755 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:36:28,683 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:36:29,583 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:36:31,605 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:36:32,480 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:36:48,033 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:36:48,909 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:37:03,978 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:37:03,979 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:37:17,118 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:37:18,278 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:38:42,573 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:38:42,573 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:39:33,674 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:39:34,808 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:40:25,551 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:40:26,660 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:40:28,683 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:40:29,555 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:40:32,187 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:40:33,065 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:40:33,773 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:40:34,644 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:40:35,352 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:40:36,268 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:41:06,090 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:41:06,090 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:43:01,905 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:43:02,979 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:43:05,607 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:43:09,765 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:43:38,858 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:43:39,705 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:44:28,062 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:44:28,063 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:45:29,626 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:45:29,626 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:45:35,631 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 12:45:35,631 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') medium=<MessageMedium.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 12:45:43,421 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:45:44,366 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:45:52,755 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:45:53,602 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:46:05,723 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 12:46:06,610 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 12:46:17,826 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 13:38:11,002 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 13:38:11,005 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 13:38:11,006 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 13:40:04,860 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 13:40:05,799 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 13:41:17,035 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 13:41:22,009 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 13:42:30,105 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 13:42:31,063 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 13:44:32,410 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 13:44:33,541 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 13:44:45,567 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 13:45:32,488 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 13:45:32,491 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 13:45:32,491 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 13:45:34,163 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:45:27,129 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:45:27,133 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 14:45:27,133 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 14:45:34,107 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:45:34,964 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:45:44,264 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:45:45,126 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:45:46,237 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:45:47,100 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:45:48,212 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:45:49,061 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:45:50,173 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:45:51,143 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:45:54,677 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:45:55,577 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:45:55,779 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:45:56,643 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:46:01,395 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:46:02,340 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:46:02,342 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 14:46:02,343 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 14:46:03,959 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:46:04,812 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:46:09,158 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:46:10,028 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:46:20,536 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:46:21,594 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:46:49,680 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:46:50,562 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:46:52,701 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 14:46:52,702 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 14:46:56,530 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:46:57,363 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:46:59,291 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 14:46:59,292 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 14:47:05,153 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:47:05,983 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:47:22,865 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:47:23,755 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:47:24,767 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:47:25,735 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:47:26,949 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:47:27,825 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:47:34,902 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:47:35,773 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:47:42,502 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:47:43,395 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:47:43,900 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:47:44,862 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:47:50,014 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:47:50,872 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:47:55,320 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:47:56,226 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:47:56,834 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:47:57,851 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:48:57,577 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:48:58,454 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:49:03,303 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:49:04,260 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:49:23,955 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 14:49:23,955 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 14:49:31,628 - zootopia.utils.logger - INFO - Bird message received
+2024-07-04 14:49:31,629 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 14:50:00,454 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:50:01,327 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:50:02,945 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:50:03,795 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:50:08,141 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:50:08,980 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:50:11,106 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:50:11,976 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:50:13,392 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:50:14,368 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:50:18,410 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:50:19,284 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:50:20,699 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:50:21,528 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:50:25,468 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:50:26,324 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:50:33,095 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:50:33,932 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:50:49,295 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:50:50,151 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:50:51,870 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:50:52,700 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:50:58,561 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:50:59,416 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:51:01,538 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:51:02,389 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:51:09,966 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 14:51:10,825 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 14:51:31,938 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:17:41,058 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:18:43,003 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:18:44,094 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:19:43,525 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:19:44,445 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:21:17,717 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:21:32,277 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:21:56,628 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:21:57,664 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:22:00,089 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:22:00,955 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:22:03,079 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:22:03,974 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:22:18,828 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:22:19,672 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:22:20,885 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:22:21,798 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:22:54,567 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:22:55,731 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:24:15,950 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:24:17,120 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:24:23,085 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:24:24,699 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:24:25,305 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:24:26,172 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:24:27,286 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:24:28,188 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:24:28,492 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:24:29,418 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:24:35,482 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:24:36,411 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:24:50,961 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:24:52,273 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:24:55,000 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:24:55,896 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:25:27,629 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:25:29,054 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:25:34,821 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:26:30,825 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:26:34,968 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:26:35,868 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:26:42,037 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:26:42,894 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:26:46,027 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:26:46,894 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:26:47,905 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:26:48,813 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:27:04,686 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:27:05,574 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:27:08,502 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:27:15,332 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:27:38,476 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:27:39,793 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:31:33,067 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:31:38,363 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:34:08,914 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:36:29,197 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:37:02,780 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:37:03,666 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:37:39,468 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:37:40,659 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:37:40,861 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:37:41,723 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:37:42,837 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:37:43,747 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:37:44,960 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:37:45,856 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:37:49,092 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:37:50,044 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:37:55,908 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:37:56,817 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:38:00,255 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:38:01,136 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:38:02,348 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:38:03,214 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:38:14,034 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:38:14,951 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:38:16,064 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:38:16,965 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:38:19,109 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:38:20,052 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:39:32,109 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:39:33,309 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:39:36,237 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:39:37,083 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:39:46,683 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:39:48,871 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:39:53,051 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:39:53,903 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:39:57,337 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:39:58,210 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:39:58,917 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:39:59,792 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:40:01,208 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:40:02,069 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:40:03,179 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:40:04,046 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:40:06,369 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:40:07,238 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:40:08,250 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:40:09,100 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:40:10,515 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:40:11,389 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:40:12,299 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:40:13,144 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:40:24,663 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:40:25,523 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:40:26,937 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:40:27,869 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:40:28,879 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:40:29,728 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:40:31,041 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:40:31,905 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:42:13,965 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:42:15,171 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:43:08,330 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:43:09,536 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:44:52,334 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:44:53,598 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:44:57,034 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:44:57,925 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:44:59,948 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:45:00,874 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 15:45:24,630 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 15:45:25,750 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:24:34,238 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:24:36,840 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:24:42,095 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:24:42,982 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:25:11,035 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:25:11,940 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:25:12,144 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:25:12,998 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:26:23,932 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:26:25,023 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:26:27,248 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:26:28,140 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:26:34,304 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:26:35,963 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:26:37,486 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:26:38,319 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:29:03,873 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:29:05,008 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:29:05,716 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:29:06,618 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:29:08,034 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:29:09,021 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:29:36,360 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:29:37,288 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:34:04,558 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:34:05,690 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:46:42,912 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:49:45,983 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:49:47,185 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:49:51,025 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:49:51,855 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:50:53,324 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:50:54,449 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:50:59,903 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:51:00,781 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:51:02,295 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:51:03,163 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:51:04,377 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:51:05,273 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:56:14,836 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:56:16,777 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:56:20,920 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:56:21,774 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:56:28,041 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:56:28,875 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:57:29,434 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:57:30,314 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:57:36,478 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:57:37,358 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:59:25,822 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:59:31,410 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 20:59:32,422 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 20:59:33,281 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:00:01,794 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:00:02,683 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:00:06,828 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:00:07,690 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:02:17,784 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:02:18,680 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:02:19,690 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:02:20,546 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:02:20,957 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:02:21,825 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:02:26,779 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:02:27,649 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:02:29,670 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:02:30,542 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:02:42,663 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:02:43,519 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:03:32,998 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:03:33,902 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:04:15,764 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:04:19,511 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:04:25,172 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:04:28,186 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:04:32,228 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:04:33,080 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:04:40,377 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:04:41,233 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:04:42,952 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:04:45,388 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:04:54,277 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:04:55,163 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:04:57,796 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:04:58,635 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:05:57,014 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:05:57,849 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:06:38,247 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:06:39,112 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:06:54,477 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:06:58,924 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:07:01,450 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:07:02,314 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:07:05,043 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:07:05,994 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:07:07,408 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:07:08,285 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:07:09,296 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:07:10,150 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:07:10,757 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:07:11,617 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:07:21,516 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:07:22,402 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:07:24,626 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:07:25,497 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:07:30,247 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:07:31,169 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:07:38,235 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:07:39,087 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:07:56,259 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:07:57,148 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:08:23,095 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:08:24,015 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:08:24,420 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:08:25,405 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:08:39,580 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:08:41,284 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:08:54,691 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:08:55,567 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:08:59,507 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:09:00,375 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:09:11,086 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:20:35,798 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:20:47,761 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:20:48,740 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:21:02,442 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:21:03,466 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:21:05,689 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:21:06,571 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:21:08,187 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:21:09,078 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:21:14,231 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:21:15,115 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:21:46,713 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:21:47,625 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:21:50,455 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:21:51,357 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:22:00,249 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:22:01,126 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:22:02,947 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:22:03,794 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:22:08,344 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:22:09,222 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:22:22,666 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:22:23,690 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:22:25,814 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:22:27,700 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:22:30,728 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:22:33,121 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:22:35,244 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:22:37,127 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:22:42,587 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:22:43,469 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:22:44,783 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:22:45,615 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:22:56,832 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:22:57,723 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:22:59,342 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:23:00,181 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:23:13,922 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:23:14,865 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:23:20,218 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:23:21,082 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:23:28,054 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:23:28,958 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:23:30,474 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:23:31,292 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:23:56,553 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:23:57,457 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:23:59,276 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:24:00,170 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:24:01,382 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:24:02,298 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:24:09,874 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:24:10,764 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:24:14,608 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:24:15,476 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:24:18,003 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:24:18,866 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:24:25,035 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:24:25,905 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:24:47,642 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:25:15,553 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:25:26,773 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:25:27,715 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:25:28,424 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:25:29,308 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:25:40,015 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:25:40,877 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:26:37,600 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:26:38,514 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:26:49,099 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 21:27:29,643 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 21:27:32,281 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 21:28:17,764 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:28:18,876 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:28:19,684 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:28:20,540 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:28:21,348 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:28:22,213 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:31:15,059 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:31:16,174 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:31:34,289 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 21:33:19,895 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:33:21,042 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:34:34,813 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 21:35:39,620 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 21:35:56,196 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 21:36:44,677 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 21:37:07,013 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:37:22,097 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:37:33,613 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:40:10,562 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:40:13,441 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 21:40:13,543 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:40:14,385 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:40:24,627 - zootopia.utils.logger - INFO - Received Message (from bird): content='Hi' metadata=BirdMetadata(channel_id='946f4f9d-21c0-495e-b59d-5f3704deb11b', phone_number='+13142952259') provider=<MessageProvider.BIRD: 'bird'> type=<MessageType.TEXT: 'text'>
+2024-07-04 21:40:57,271 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:40:58,150 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:41:01,888 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:41:02,752 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:41:06,086 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:41:06,946 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:41:11,090 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:41:11,969 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:41:13,401 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:41:14,282 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:41:16,301 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:41:17,144 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:42:59,910 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:44:50,193 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:45:00,399 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:45:01,314 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:45:04,347 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:45:05,262 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:45:08,394 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:45:09,281 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:45:12,416 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:45:17,131 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:47:16,889 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:47:17,782 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:47:27,482 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:47:28,316 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:47:46,807 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:47:47,782 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:47:51,117 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:47:51,981 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:48:05,523 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:48:06,462 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:48:26,574 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:48:27,437 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:48:30,168 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:48:32,865 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:48:39,533 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:48:41,300 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:48:42,713 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:48:43,575 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:49:06,713 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:49:07,546 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:49:11,589 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:49:12,458 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:49:18,926 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:49:19,807 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:49:31,020 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:49:31,847 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:49:44,578 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:49:45,544 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:49:52,718 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:50:07,831 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:50:12,480 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:50:13,335 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:50:31,425 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:50:32,317 - zootopia.utils.logger - INFO - Starting application.
+2024-07-04 21:50:35,955 - zootopia.utils.logger - INFO - Closing application.
+2024-07-04 21:50:36,896 - zootopia.utils.logger - INFO - Starting application.
