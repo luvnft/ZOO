@@ -93,8 +93,9 @@ uv pip install [package_name]
 uv pip freeze > requirements.txt
 ```
 
-## Contributing
-(WIP)
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=AIDropout/ZOOTOPIA)](https://github.com/AIDropout/ZOOTOPIA/graphs/contributors)
 
 ## License
 
