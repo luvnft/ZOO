@@ -1,12 +1,15 @@
-from typing import Any, Dict, Optional, Union, List, Type, TypeVar, Generic, Literal
+from datetime import datetime
+from typing import Any, Dict, Generic, List, Literal, Optional, Type, TypeVar, Union
+
 from pydantic import BaseModel
 from supabase import create_client
+
 from zootopia.config.config import UserIDType
 from zootopia.database.basedb import BaseDB
-from zootopia.database.models import SupabaseConfig, TableModel, TABLE_MODEL_MAP
-from datetime import datetime
+from zootopia.database.models import TABLE_MODEL_MAP, SupabaseConfig, TableModel
 
-T = TypeVar('T', bound=TableModel)
+T = TypeVar("T", bound=TableModel)
+
 
 class SupabaseDB(BaseDB):
     def __init__(self, url: str, key: str) -> None:
@@ -18,7 +21,7 @@ class SupabaseDB(BaseDB):
 
     def insert(self, table_name: str, item: TableModel) -> TableModel:
         # Remove 'id' field, since Supabase auto-increments
-        item_dict = item.model_dump(exclude={'id'})
+        item_dict = item.model_dump(exclude={"id"})
         data, _ = self.supabase.table(table_name).insert(item_dict).execute()
         return type(item)(**data[1][0]) if data and data[1] else None
 
@@ -33,21 +36,23 @@ class SupabaseDB(BaseDB):
         query = self.supabase.table(table_name).select("*")
         for key, value in conditions:
             query = query.eq(key, value)
-        
+
         data, _ = query.limit(1).execute()
-        
+
         if data and data[1]:
             model_class = TABLE_MODEL_MAP[table_name]
             return model_class(**data[1][0])
         return None
 
-    def get_multiple_rows(self, 
-                 table_name: str, 
-                 max_rows: int = 10, 
-                 from_time: Optional[datetime] = None, 
-                 order_by: str = "created_at",
-                 order_desc: bool = True,
-                 *conditions) -> List[TableModel]:
+    def get_multiple_rows(
+        self,
+        table_name: str,
+        max_rows: int = 10,
+        from_time: Optional[datetime] = None,
+        order_by: str = "created_at",
+        order_desc: bool = True,
+        *conditions
+    ) -> List[TableModel]:
         query = self.supabase.table(table_name).select("*")
 
         for key, value in conditions:
