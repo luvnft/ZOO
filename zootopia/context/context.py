@@ -1,4 +1,4 @@
-"""File that processes an incoming message and sets up utils for core character logic"""
+"""Class used to store utils needed for core Zootopian logic"""
 from zootopia.messaging.basemessaging import MessageProviderBase
 from zootopia.messaging.bird import BirdSMSProvider
 from zootopia.messaging.telegrambot import TelegramBot
@@ -7,7 +7,7 @@ from zootopia.database.supabasedb import SupabaseDB
 from zootopia.database.models import  Tables, UserModel, AgentModel, RoomModel
 from zootopia.messaging.models import ZootopiaMessage, MessageProvider, TelegramMetadata, BirdMetadata
 
-class ZootopiaAppState:
+class ZootopiaContext:
     def __init__(self, request_body, config: ZootopiaConfig):
         """
         1. Init database
@@ -34,8 +34,6 @@ class ZootopiaAppState:
     def _get_or_create_user_from_db(self, message: ZootopiaMessage) -> UserModel:
         """Returns user object from database using message metadata"""
         user = None
-
-        print(message)
 
         # Get user
         if message.provider == MessageProvider.TELEGRAM:
