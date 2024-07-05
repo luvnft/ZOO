@@ -28,7 +28,7 @@ class IntentDetector:
         llm = LLM.from_config(config.llm_config)
         return cls(llm=llm, filters=config.filters)
 
-    def detect_intent(self, data: str) -> LLMResponseStructure:
+    def detect_intent(self, data: str) -> dict:
         """
         Detect the intent of the given text data and return a dictionary of intents
         with confidence scores.
