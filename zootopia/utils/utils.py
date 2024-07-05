@@ -52,7 +52,6 @@ def clean_and_parse_llm_json_output(llm_output: str) -> dict:
     start_index = llm_output.find("{")
     end_index = llm_output.rfind("}") + 1
     cleaned_output = llm_output[start_index:end_index].strip()
-    print(cleaned_output)
     cleaned_output = re.sub(r"\n|\r", "", cleaned_output)
 
     cleaned_output = re.sub(r"\s+", " ", cleaned_output)
