@@ -1,4 +1,10 @@
-"Example file using intent with a yaml config"
+"""
+Example file using intent with a yaml config
+
+Steps:
+- add .env file based on .env.example
+- run `python -m zootopia.intent.example.example`
+"""
 
 from dotenv import load_dotenv
 
