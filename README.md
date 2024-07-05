@@ -1,7 +1,7 @@
 <h1 align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" />
-    <img height="120" src="zootopia_banner.jpg"/>
+    <img height="130" src="banner.png"/>
   </picture>
  <br />
 </h1>
@@ -52,7 +52,7 @@ Make your own `Twilio SMS` Zootopian powered by `Gemini LLM` with `Bing Search` 
 
 - [ ] Make a master config file
 - [ ] Working boyfriend agent demo
-- [ ] Documentation/configuration guide
+- [ ] High-level overview, documentation
 
 
 ## 🛠️ Environment Setup
