@@ -1,7 +1,7 @@
 <h1 align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" />
-    <img height="130" src="banner.png"/>
+    <img height="130" src="docs/images/banner.png"/>
   </picture>
  <br />
 </h1>
@@ -23,7 +23,7 @@ Make your own `Twilio SMS` Zootopian powered by `Gemini LLM` with `Bing Search` 
 ### Behaviors
 - [x] Intent detection
 - [x] Auto DB
-- [ ] Not responding to every single message (async)
+- [ ] Not responding to every single message
 - [ ] Human-like memory
 - [ ] Preference tracking
 - [ ] Proactive messages

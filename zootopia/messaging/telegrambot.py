@@ -9,7 +9,7 @@ import aiohttp
 import telegram
 from fastapi import Request
 from pydantic import ValidationError
-from zootopia.config.config import TelegramConfig
+from config.config import TelegramConfig
 from zootopia.messaging.basemessaging  import MessageProviderBase
 from zootopia.messaging.models import (
     ZootopiaMessage,
@@ -23,7 +23,7 @@ from zootopia.messaging.models import (
     _TelegramMessagePhoto,
     TelegramMetadata
 )
-from zootopia.utils.logger import logger
+from zootopia.core.utils.logger import logger
 
 
 class TelegramBot(MessageProviderBase):

@@ -2,8 +2,8 @@
 
 from typing import Any, Dict, Optional, cast
 import requests
-from ..utils.logger import logger
-from zootopia.config.config import BirdConfig
+from config.config import BirdConfig
+from zootopia.core.utils.logger import logger
 from zootopia.messaging.basemessaging  import MessageProviderBase
 from zootopia.messaging.models import (
     SendMessageError,
