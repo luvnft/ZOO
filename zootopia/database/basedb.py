@@ -1,7 +1,8 @@
 from abc import ABC, abstractmethod
-from typing import List, Optional
-from zootopia.database.models import TableModel
 from datetime import datetime
+from typing import List, Optional
+
+from zootopia.database.models import TableModel
 
 class BaseDB(ABC):
     @abstractmethod
@@ -17,8 +18,16 @@ class BaseDB(ABC):
         pass
 
     @abstractmethod
-    def get_multiple_rows(self, table_name: str, max_rows: int = 10, from_time: Optional[datetime] = None, 
-                          order_by: str = "created_at", order_desc: bool = True, *conditions) -> List[TableModel]:
+
+    def get_multiple_rows(
+        self,
+        table_name: str,
+        max_rows: int = 10,
+        from_time: Optional[datetime] = None,
+        order_by: str = "created_at",
+        order_desc: bool = True,
+        *conditions
+    ) -> List[TableModel]:
         pass
 
     @abstractmethod

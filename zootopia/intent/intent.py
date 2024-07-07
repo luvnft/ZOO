@@ -1,6 +1,10 @@
 from typing import List
-
-from zootopia.intent.models import IntentConfig, IntentFilters, LLMResponseStructure
+from zootopia.intent.models import (
+    Confidence,
+    IntentConfig,
+    IntentFilters,
+    LLMResponseStructure,
+)
 from zootopia.langchain.llm import LLM
 from zootopia.utils.utils import clean_and_parse_llm_json_output, render_jinja_template
 
@@ -28,7 +32,8 @@ class IntentDetector:
         llm = LLM.from_config(config.llm_config)
         return cls(llm=llm, filters=config.filters)
 
-    def detect_intent(self, data: str) -> LLMResponseStructure:
+
+    def detect_intent(self, data: str) -> dict:
         """
         Detect the intent of the given text data and return a dictionary of intents
         with confidence scores.
@@ -40,3 +45,44 @@ class IntentDetector:
             raise ValueError(cleaned["error"])
 
         return cleaned
+
+    # TODO:
+    # update all uses of 'detect_intent' to match this new function, del the old one
+    def detect_intent_(
+        self,
+        data: str,
+        detect_single: bool = False,
+        confidence_threshold: Confidence = Confidence.LOW,
+    ) -> List[str]:
+        """
+        Detects the intent of the given text data and returns a list of intents that
+        pass the confidence threshold.
+        """
+        content = self.llm.generate_response(data).content
+        cleaned = clean_and_parse_llm_json_output(content)
+
+        if "error" in cleaned:
+            raise ValueError(cleaned["error"])
+
+        def filter_intents(conf_level):
+            return [
+                intent
+                for intent, conf in cleaned["intent"].items()
+                if Confidence(conf) == conf_level
+            ]
+
+        confidence_levels = {
+            Confidence.HIGH: filter_intents(Confidence.HIGH),
+            Confidence.MID: filter_intents(Confidence.MID),
+            Confidence.LOW: filter_intents(Confidence.LOW),
+        }
+
+        result = []
+        for level in Confidence:
+            if level >= confidence_threshold:
+                result.extend(confidence_levels[level])
+
+        if detect_single and result:
+            return [result[0]]
+
+        return result

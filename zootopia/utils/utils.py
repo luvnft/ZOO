@@ -1,7 +1,22 @@
 import json
 import re
 
+import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from pydantic import BaseModel, ValidationError
+
+
+def load_yaml_config(
+    config_path: str,
+    config_type: BaseModel,
+) -> BaseModel:
+    """Loads configuration from a YAML file."""
+    with open(config_path, "r", encoding="utf-8") as config_file:
+        config_data = yaml.safe_load(config_file)
+    try:
+        return config_type(**config_data)
+    except ValidationError as e:
+        raise ValueError(f"Error parsing configuration: {e}") from e
 
 
 def render_jinja_template(template_name: str, template_dir: str, **kwargs) -> str:
@@ -37,7 +52,6 @@ def clean_and_parse_llm_json_output(llm_output: str) -> dict:
     start_index = llm_output.find("{")
     end_index = llm_output.rfind("}") + 1
     cleaned_output = llm_output[start_index:end_index].strip()
-    print(cleaned_output)
     cleaned_output = re.sub(r"\n|\r", "", cleaned_output)
 
     cleaned_output = re.sub(r"\s+", " ", cleaned_output)
