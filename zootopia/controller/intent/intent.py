@@ -33,22 +33,7 @@ class IntentManager:
         return cls(llm=llm, filters=config.filters)
 
 
-    def detect_intent(self, data: str) -> dict:
-        """
-        Detect the intent of the given text data and return a dictionary of intents
-        with confidence scores.
-        """
-        content = self.llm.generate_response(data).content
-        cleaned = clean_and_parse_llm_json_output(content)
-
-        if "error" in cleaned:
-            raise ValueError(cleaned["error"])
-
-        return cleaned
-
-    # TODO:
-    # update all uses of 'detect_intent' to match this new function, del the old one
-    def detect_intent_(
+    def detect_intent(
         self,
         data: str,
         detect_single: bool = False,

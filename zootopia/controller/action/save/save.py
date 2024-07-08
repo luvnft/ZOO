@@ -56,7 +56,7 @@ class SaveManager:
             intent = intent_detector.detect_intent(self.message.message.message.text)
             logger.info(intent)
 
-            if "INFORM" in intent["intent"]:
+            if "INFORM" in intent:
                 return True
         except Exception as e:
             logger.error("Unable to detect user's intent with message: %s", e)

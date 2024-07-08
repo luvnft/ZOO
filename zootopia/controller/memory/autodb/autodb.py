@@ -123,14 +123,14 @@ class AutoDB:
 
     def _get_intents(self, data: str) -> List[DataLocation]:
         """Get the intents from the user input."""
-        intents = cast(dict, self.intent_detector.detect_intent(data)["intent"])
+        intents = self.intent_detector.detect_intent(data)
 
         data_locations = [
             DataLocation(
                 table=intent if "_" not in intent else intent[: intent.find("_")],
                 column=None if "_" not in intent else intent[intent.find("_") + 1 :],
             )
-            for intent in list(intents.keys())
+            for intent in intents
         ]
 
         return data_locations
