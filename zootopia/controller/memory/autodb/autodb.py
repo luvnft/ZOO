@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Callable, Dict, List, Optional, cast
 
-from zootopia.controller.action.autodb.models import (
+from zootopia.controller.memory.autodb.models import (
     AutoDBConfig,
     DataAction,
     DatabaseColumn,
