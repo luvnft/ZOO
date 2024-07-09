@@ -3,7 +3,7 @@ from typing import Optional, Union
 
 from pydantic import BaseModel
 
-from zootopia.llm.models import LLMConfig
+from zootopia.core.schema.llm import LLMConfig
 
 
 class TableType(Enum):

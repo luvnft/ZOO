@@ -1,91 +1,74 @@
-# TODO: Switch to LiteLLM!
-from typing import Dict, List, Optional, Type, Union
-
-from langchain_anthropic import ChatAnthropic
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_groq import ChatGroq
-from langchain_openai import ChatOpenAI
-from pydantic import BaseModel
-
-from zootopia.llm.models import ImitateChat, LLMConfig, LLMProviders
-
+from typing import List, Dict, Optional
+from litellm import completion
 
 class LLM:
-    """Class for Large Language Models (LLMs) usage powered by LangChain"""
+    """Class for Large Language Models (LLMs) usage powered by LiteLLM"""
 
-    def __init__(
-        self,
-        llm: Union[ChatOpenAI, ChatAnthropic, ChatGoogleGenerativeAI, ChatGroq],
-        system_prompt: str = None,
-        structured_output: Optional[Union[Dict, Type[BaseModel]]] = None,
-    ) -> None:
-        """Initialize LLM with specified model, system prompt, and structured_output."""
-        self.llm = llm
-        self.system_prompt = system_prompt
-        self.structured_output = structured_output
+    def __init__(self, model: str):
+        self.model: str = model
 
-    @classmethod
-    def from_config(cls, config: LLMConfig) -> "LLM":
-        """Create an LLM instance from a configuration object."""
-        name = config.name.value
-        match config.provider:
-            case LLMProviders.OPENAI:
-                llm = ChatOpenAI(model=name)
-            case LLMProviders.ANTHROPIC:
-                llm = ChatAnthropic(model_name=name)
-            case LLMProviders.GOOGLE:
-                llm = ChatGoogleGenerativeAI(model=name)
-            case LLMProviders.GROQ:
-                llm = ChatGroq(model=name)
-            case _:
-                raise ValueError(f"Unsupported LLM provider: {config.provider}")
-
-        return cls(
-            llm=llm,
-            system_prompt=config.system_prompt,
-            structured_output=config.structured_output,
-        )
-
-    def _organize_query(
-        self, query: Union[str, List[BaseMessage]]
-    ) -> List[BaseMessage]:
-        """Organize query into a list of BaseMessage objects (incl. system_prompt)."""
-
-        messages = (
-            [SystemMessage(content=self.system_prompt)] if self.system_prompt else []
-        )
-
-        if isinstance(query, str):
-            messages.append(query)
-        elif isinstance(query, list):
-            if not all(isinstance(item, BaseMessage) for item in query):
-                raise TypeError("Query list must contain only BaseMessage objects")
-            messages.extend(query)
-        else:
-            raise TypeError("Query must be a string or a list of BaseMessage objects")
-
+    def _prepare_messages(self, messages: List[Dict[str, str]], system_prompt: Optional[str] = None) -> List[Dict[str, str]]:
+        """Prepend the system prompt to the messages if it exists."""
+        if system_prompt:
+            return [{"role": "system", "content": system_prompt}] + messages
         return messages
 
-    def generate_response(self, query: Union[str, List[BaseMessage]]) -> AIMessage:
-        """Generate an AI response from the LLM given a query."""
-        messages = self._organize_query(query)
+    def generate_response(self, messages: List[Dict[str, str]], system_prompt: Optional[str] = None, **kwargs) -> str:
+        """
+        Generate a response using the specified model.
+        
+        :param messages: List of message dictionaries with 'role' and 'content' keys
+        :param system_prompt: Optional system prompt to guide the model's behavior
+        :param kwargs: Additional arguments to pass to the litellm completion function
+        :return: The generated response as a string
+        """
+        try:
+            prepared_messages = self._prepare_messages(messages, system_prompt)
+            response = completion(model=self.model, messages=prepared_messages, **kwargs)
+            return response.choices[0].message.content
+        except Exception as e:
+            print(f"Error generating response: {e}")
+            return ""
 
-        if self.structured_output:
-            return self.llm.with_structured_output(self.structured_output).invoke(
-                messages
-            )
+    def generate_stream(self, messages: List[Dict[str, str]], system_prompt: Optional[str] = None, **kwargs):
+        """
+        Generate a streaming response using the specified model.
+        
+        :param messages: List of message dictionaries with 'role' and 'content' keys
+        :param system_prompt: Optional system prompt to guide the model's behavior
+        :param kwargs: Additional arguments to pass to the litellm completion function
+        :return: A generator yielding response chunks
+        """
+        try:
+            prepared_messages = self._prepare_messages(messages, system_prompt)
+            response = completion(model=self.model, messages=prepared_messages, stream=True, **kwargs)
+            for chunk in response:
+                yield chunk.choices[0].delta.content or ""
+        except Exception as e:
+            print(f"Error generating streaming response: {e}")
+            yield ""
 
-        return self.llm.invoke(messages)
 
-    @staticmethod
-    def imitate_chat(chat: List[ImitateChat]) -> List[Union[AIMessage, HumanMessage]]:
-        """Converts ImitateChat list to AIMessage and HumanMessage list."""
-        return [
-            (
-                AIMessage(content=message.message)
-                if message.is_llm
-                else HumanMessage(content=message.message)
-            )
-            for message in chat
-        ]
+# Example usage:
+if __name__ == "__main__":
+    # Initialize LLM with a specific model
+    llm = LLM("gpt-3.5-turbo")
+
+    # Define a system prompt
+    system_prompt = "You are a helpful assistant that speaks like a pirate."
+
+    # Generate a response with system prompt
+    messages = [{"role": "user", "content": "Tell me about the weather today."}]
+    response = llm.generate_response(messages, system_prompt=system_prompt)
+    print("Generated response:", response)
+
+    # Generate a streaming response with system prompt
+    print("\nStreaming response:")
+    for chunk in llm.generate_stream(messages, system_prompt=system_prompt):
+        print(chunk, end="", flush=True)
+    print()
+
+    # Generate a response without system prompt
+    messages = [{"role": "user", "content": "What's the capital of France?"}]
+    response = llm.generate_response(messages)
+    print("\nGenerated response without system prompt:", response)

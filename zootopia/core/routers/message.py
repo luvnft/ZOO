@@ -3,7 +3,7 @@ import json
 
 from config.config import config
 from zootopia.controller import AgentController, ContextManager
-from zootopia.core.utils.logger import logger
+from zootopia.core.logger import logger
 
 router = APIRouter()
 
@@ -16,6 +16,7 @@ async def message_webhook(request: Request):
         logger.info(f"Received {context.message.provider.value}) message: "
             f"{context.message}"
         )
+
         zootopian = AgentController(context)
         await zootopian.handle_message()
     except Exception as e:

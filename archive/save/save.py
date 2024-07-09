@@ -7,13 +7,13 @@ from zootopia.controller.action.autodb.autodb import AutoDB
 from config.config import autodb_config, config
 from zootopia.storage.database.supabase import SupabaseDB
 from zootopia.apis.gsuite.gcal.gcal import GCal
-from zootopia.controller.intent.intent import IntentManager
+from zootopia.controller.intent._intent import IntentManager
 from zootopia.controller.intent.models import IntentFilters
-from zootopia.llm.llm import LLM
-from zootopia.llm.models import LLMConfig, LLMNames, LLMProviders
+from archive.langchain import LLM
+from zootopia.core.schema.llm import LLMConfig, LLMNames, LLMProviders
 from zootopia.messaging.messaging  import MessageProviderBase
 from zootopia.messaging.models import ZootopiaMessage
-from zootopia.core.utils.logger import logger
+from zootopia.core.logger import logger
 from zootopia.core.utils.utils import render_jinja_template
 
 

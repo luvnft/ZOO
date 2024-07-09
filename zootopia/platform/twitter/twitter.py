@@ -9,11 +9,9 @@ import json
 # export 'CONSUMER_SECRET'='<your_consumer_secret>'
 
 # insert API KEY 
-# commenting this out for now: 
 consumer_key = os.environ.get("CONSUMER_KEY")
 
 # insert API KEY SECRET
-# commenting this out for now: 
 consumer_secret = os.environ.get("CONSUMER_SECRET")
 
 # Be sure to add replace the text of the with the text you wish to Tweet. You can also add parameters to post polls, quote Tweets, Tweet with reply settings, and Tweet to Super Followers in addition to other features.

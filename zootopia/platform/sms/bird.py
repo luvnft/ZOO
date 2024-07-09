@@ -3,7 +3,7 @@
 from typing import Any, Dict, Optional, cast
 import requests
 from config.config import BirdConfig
-from zootopia.core.utils.logger import logger
+from zootopia.core.logger import logger
 from zootopia.platform.platform  import MessageProviderBase
 from zootopia.platform.models import (
     ZootopiaMessage,

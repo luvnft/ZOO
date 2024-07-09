@@ -10,10 +10,10 @@ from zootopia.controller.memory.autodb.models import (
     TableType,
 )
 from zootopia.storage.database.database import Database
-from zootopia.controller.intent.intent import IntentManager
+from zootopia.controller.intent._intent import IntentManager
 from zootopia.controller.intent.models import IntentConfig, IntentFilters
-from zootopia.llm.llm import LLM
-from zootopia.core.utils.logger import logger
+from archive.langchain import LLM
+from zootopia.core.logger import logger
 from zootopia.core.utils.utils import clean_and_parse_llm_json_output, render_jinja_template
 
 

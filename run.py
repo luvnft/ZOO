@@ -14,7 +14,7 @@ from config.config import config
 from zootopia.platform.telegram.telegram import Telegram
 from zootopia.platform.sms.bird import BirdSMSProvider
 from zootopia.core.routers.message import router as message_router
-from zootopia.core.utils.logger import logger
+from zootopia.core.logger import logger
 
 
 class LoggingMiddleware(BaseHTTPMiddleware):

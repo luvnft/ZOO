@@ -8,7 +8,7 @@ from zootopia.storage.database.supabase import SupabaseDB
 from zootopia.apis.gsuite.gauth.gauth import GAuth
 from zootopia.messaging.messaging  import MessageProviderBase
 from zootopia.messaging.models import ZootopiaMessage, MessageProvider, TelegramMetadata, BirdMetadata
-from zootopia.core.utils.logger import logger
+from zootopia.core.logger import logger
 from zootopia.core.utils.utils import render_jinja_template
 
 

@@ -20,7 +20,7 @@ from zootopia.platform.models import (
     TelegramMetadata
 )
 from zootopia.core.exceptions import MessageParsingError, SendMessageError, WebhookError
-from zootopia.core.utils.logger import logger
+from zootopia.core.logger import logger
 
 
 class Telegram(MessageProviderBase):

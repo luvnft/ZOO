@@ -3,7 +3,7 @@
 import uuid
 import aioredis
 from aioredis import Redis
-from zootopia.core.utils.logger import logger
+from zootopia.core.logger import logger
 
 # Temp: To use
 # cancel = CancelManager(config.CANCEL_CONFIG.REDIS_URL)

@@ -1,6 +1,20 @@
 from pydantic import BaseModel, Field
+from dataclasses import dataclass
+from typing import Dict, Union
 
-__all__ = ['ActionType']
+
+__all__ = ['ActionType', 'Action', 'ActionResults']
+
+@dataclass
+class Action:
+    type: str
+    args: Dict[str, Union[str, int, float, bool]]
+
+@dataclass
+class ActionResult:
+    action: Action
+    success: bool
+    result: Union[str, Dict]
 
 
 class ActionTypeSchema(BaseModel):
