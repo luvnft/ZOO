@@ -1,4 +1,4 @@
-"""Run this file to start a server that receives incoming messages (zootopia.routers.message)"""
+"""Starts FastAPI server to receive messages"""
 import asyncio
 import os
 from contextlib import asynccontextmanager

@@ -7,10 +7,10 @@ from oauth2client.client import OAuth2Credentials
 from tzlocal import get_localzone
 
 from config.config import config
-from zootopia.storage.database.supabasedb import SupabaseDB
+from zootopia.storage.database.supabase import SupabaseDB
 from zootopia.apis.gsuite.gcal.gcal import GCal
 from zootopia.apis.gsuite.gdrive.gdrive import GDrive
-from zootopia.messaging.basemessaging  import MessageProviderBase
+from zootopia.messaging.messaging  import MessageProviderBase
 from zootopia.messaging.models import ZootopiaMessage
 from zootopia.messaging.telegrambot import TelegramBot
 from zootopia.core.utils.utils import render_jinja_template

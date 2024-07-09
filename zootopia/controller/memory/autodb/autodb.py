@@ -9,7 +9,7 @@ from zootopia.controller.memory.autodb.models import (
     DataLocation,
     TableType,
 )
-from zootopia.storage.database.basedb import BaseDB
+from zootopia.storage.database.database import Database
 from zootopia.controller.intent.intent import IntentManager
 from zootopia.controller.intent.models import IntentConfig, IntentFilters
 from zootopia.llm.llm import LLM
@@ -103,7 +103,7 @@ class AutoDB:
             "column_to_llm_structure": column_to_llm_structure,
         }
 
-    def save_data(self, data: str, database: BaseDB):
+    def save_data(self, data: str, database: Database):
         """Save data to the database based on user input."""
         data_locations = self._get_intents(data)
         logger.info(data_locations)
@@ -112,7 +112,7 @@ class AutoDB:
         self._update_database(database, data_actions)
         return data_locations, data_actions
 
-    def get_data(self, data: str, database: BaseDB):
+    def get_data(self, data: str, database: Database):
         "Retrieve data from the database based on user input."
         data_locations = self._get_intents(data)
         data_rows = []
@@ -163,7 +163,7 @@ class AutoDB:
         return output
 
     # TODO: check if data exists already in the database (if it does, don't update db)
-    def _update_database(self, database: BaseDB, data_actions: List[DataAction]):
+    def _update_database(self, database: Database, data_actions: List[DataAction]):
         """Update the database with the extracted data."""
         output = []
 

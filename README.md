@@ -56,7 +56,7 @@ Make your own `Twilio SMS` Zootopian powered by `Gemini LLM` with `Bing Search` 
 
 
 ## 🛠️ Environment Setup
-Make sure Python and [ngrok](https://ngrok.com/) are installed.
+Make sure Python, [ngrok](https://ngrok.com/), and [uv]() are installed.
 
    ```bash
    # 1 Navigate to the repository. Install [uv](https://github.com/astral-sh/uv):

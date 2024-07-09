@@ -10,7 +10,7 @@ import telegram
 from fastapi import Request
 from pydantic import ValidationError
 from config.config import TelegramConfig
-from zootopia.messaging.basemessaging  import MessageProviderBase
+from zootopia.messaging.messaging  import MessageProviderBase
 from zootopia.messaging.models import (
     ZootopiaMessage,
     MessageProvider,

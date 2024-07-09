@@ -2,9 +2,9 @@ from abc import ABC, abstractmethod
 from datetime import datetime
 from typing import List, Optional
 
-from zootopia.storage.database.models import TableModel
+from zootopia.core.schema import TableModel
 
-class BaseDB(ABC):
+class Database(ABC):
     @abstractmethod
     def insert(self, table_name: str, item: TableModel) -> TableModel:
         pass

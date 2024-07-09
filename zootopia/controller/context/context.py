@@ -1,9 +1,9 @@
-"""Class used to store utils needed for core Zootopian logic"""
+"""Class used to store utils needed for agent_controller logic"""
 
 from config.config import ZootopiaConfig
-from zootopia.storage.database.models import AgentModel, RoomModel, Tables, UserModel
-from zootopia.storage.database.supabasedb import SupabaseDB
-from zootopia.messaging.basemessaging import MessageProviderBase
+from zootopia.core.schema import Tables, AgentTableModel, RoomTableModel, UserTableModel
+from zootopia.storage.database.supabase import SupabaseDB
+from zootopia.messaging.messaging import MessageProviderBase
 from zootopia.messaging.bird import BirdSMSProvider
 from zootopia.messaging.models import (
     BirdMetadata,
@@ -30,9 +30,9 @@ class ContextManager:
         self.message: ZootopiaMessage = self.messaging_service.receive_message(
             request_body
         )
-        self.user: UserModel = self._get_or_create_user_from_db(self.message)
-        self.agent: AgentModel = self._get_or_create_agent_from_db(self.message)
-        self.room: RoomModel = self._get_or_create_room_from_db(
+        self.user: UserTableModel = self._get_or_create_user_from_db(self.message)
+        self.agent: AgentTableModel = self._get_or_create_agent_from_db(self.message)
+        self.room: RoomTableModel = self._get_or_create_room_from_db(
             self.message, self.user, self.agent
         )
 
@@ -47,7 +47,7 @@ class ContextManager:
         else:
             raise NotImplementedError("Messaging platform not implemented yet.")
 
-    def _get_or_create_user_from_db(self, message: ZootopiaMessage) -> UserModel:
+    def _get_or_create_user_from_db(self, message: ZootopiaMessage) -> UserTableModel:
         """Returns user object from database using message metadata"""
         user = None
 
@@ -67,7 +67,7 @@ class ContextManager:
 
         # If no user exists, create user
         if not user:
-            new_user = UserModel(
+            new_user = UserTableModel(
                 telegram_uid=(
                     message.metadata.uid
                     if isinstance(message.metadata, TelegramMetadata)
@@ -84,9 +84,9 @@ class ContextManager:
 
         return user
 
-    def _get_or_create_agent_from_db(self, message: ZootopiaMessage) -> AgentModel:
+    def _get_or_create_agent_from_db(self, message: ZootopiaMessage) -> AgentTableModel:
         """Returns agent object from database using message metadata"""
-        agent: AgentModel = None
+        agent: AgentTableModel = None
 
         # Get agent
         if message.provider == MessageProvider.TELEGRAM:
@@ -101,7 +101,7 @@ class ContextManager:
 
         # If no agents exists, create one
         if not agent:
-            new_agent = AgentModel(
+            new_agent = AgentTableModel(
                 telegram_chat_id=(
                     message.metadata.chat_id
                     if isinstance(message.metadata, TelegramMetadata)
@@ -119,8 +119,8 @@ class ContextManager:
         return agent
 
     def _get_or_create_room_from_db(
-        self, message: ZootopiaMessage, user: UserModel, agent: AgentModel
-    ) -> RoomModel:
+        self, message: ZootopiaMessage, user: UserTableModel, agent: AgentTableModel
+    ) -> RoomTableModel:
         """Returns room object from database using message metadata"""
         room = None
 
@@ -134,6 +134,6 @@ class ContextManager:
 
         # If no room exists, create room via message metadata
         if not room:
-            new_room = RoomModel(user_id=user.id, agent_id=agent.id)
+            new_room = RoomTableModel(user_id=user.id, agent_id=agent.id)
             user = self.database.insert(Tables.ROOMS.value, new_room)
         return room

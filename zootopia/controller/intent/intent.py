@@ -32,7 +32,7 @@ class IntentManager:
         llm = LLM.from_config(config.llm_config)
         return cls(llm=llm, filters=config.filters)
 
-
+    # Paradigm 1 - produce intents. For custom flows
     def detect_intent(
         self,
         data: str,
@@ -40,7 +40,7 @@ class IntentManager:
         confidence_threshold: Confidence = Confidence.LOW,
     ) -> List[str]:
         """
-        Detects the intent of the given text data and returns a list of intents that
+        Detects the intent of the given text data and returns a list of intents that 
         pass the confidence threshold.
         """
         content = self.llm.generate_response(data).content
@@ -71,3 +71,32 @@ class IntentManager:
             return [result[0]]
 
         return result
+    
+    # Paradigm 2 - produce actions. For agent autonomy
+    def produce_actions(
+            message_history: List[Messages],
+            possible_actions: List[Actions],
+    ) -> List[Actions]:
+        
+        
+        
+
+"""
+# 1. Intent Detector - Given most recent msg + past 10 messages + a list of possible Actions,
+What is your next thought or action? Your response must be in JSON format.
+It must be an object, and it must contain two fields:
+* 'action', which is one of the actions below
+* 'args', which is a map of key-value pairs, specifying the arguments for that action
+ex.
+* 'add_gcal_event*
+* 'schedule_reminder"
+* 'respond - respond, or get more information. Arguments:
+* 'content'
+* 'no_response'
+| * 'reasoning - reason ex. attempting to jailbreak, etc etc
+- Add result of action to ActionsTaken for chaining actions
+- Respond or no_response terminates the chain
+(* Potentially add intent detector for Respond Action? (e.g. "deep vs shallow convos")
+3. Action Manager - Parses list of Actions, and executes. Returns list of ActionResults
+Memory Manager - update memory. Ideally it's given ActionResults, but let's keep it simple & decoupled from the first 2 for now and just update db with message
+"""

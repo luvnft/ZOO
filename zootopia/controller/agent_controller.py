@@ -10,14 +10,15 @@ class AgentController:
     def __init__(
         self, context: ContextManager
     ) -> None:
-        self.ZOOTOPIA = context
+        self.context = context
         self.intent = IntentManager(context)
         self.action = ActionManager(context)
         self.memory = MemoryManager(context)
 
     # TODO: design and implement pseudo-code
     def handle_message(self):
-        actions = self.intent.produce_actions()
+        message_history = self.memory.get_message_history()
+        actions = self.intent.produce_actions(message_history, )
         results = self.action.execute_actions(actions)
         self.memory.update_memory(results)
 

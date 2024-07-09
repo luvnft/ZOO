@@ -2,8 +2,7 @@ from fastapi import APIRouter, Request
 import json
 
 from config.config import config
-from zootopia.controller.context.context import ContextManager
-from zootopia.controller.agent_controller import AgentController
+from zootopia.controller import AgentController, ContextManager
 from zootopia.core.utils.logger import logger
 
 router = APIRouter()

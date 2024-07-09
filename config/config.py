@@ -5,9 +5,9 @@ from typing import cast, Optional, List
 import yaml
 from pydantic import BaseModel, ValidationError
 
-from zootopia.autodb.models import AutoDBConfig
-from zootopia.database.models import ConstantIDConfig, SupabaseConfig, _UserIDConfig
-from zootopia.gsuite.models import GAuthConfig
+from zootopia.controller.memory.autodb.models import AutoDBConfig
+from config.models import ConstantIDConfig, SupabaseConfig, _UserIDConfig
+from zootopia.apis.gsuite.models import GAuthConfig
 
 class CalendarConfig(BaseModel):
     CALENDAR_NAME: str

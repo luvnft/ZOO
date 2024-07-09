@@ -3,10 +3,10 @@ from datetime import datetime, timezone
 from typing import Union
 from oauth2client.client import OAuth2Credentials
 from config.config import config
-from zootopia.storage.database.models import GAuthTable, Tables, UserModel, AgentModel, RoomModel
-from zootopia.storage.database.supabasedb import SupabaseDB
+from config.models import GAuthTable, Tables, UserModel, AgentModel, RoomModel
+from zootopia.storage.database.supabase import SupabaseDB
 from zootopia.apis.gsuite.gauth.gauth import GAuth
-from zootopia.messaging.basemessaging  import MessageProviderBase
+from zootopia.messaging.messaging  import MessageProviderBase
 from zootopia.messaging.models import ZootopiaMessage, MessageProvider, TelegramMetadata, BirdMetadata
 from zootopia.core.utils.logger import logger
 from zootopia.core.utils.utils import render_jinja_template

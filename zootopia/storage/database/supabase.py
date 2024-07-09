@@ -1,18 +1,16 @@
 
 from datetime import datetime
-from typing import Any, Dict, Generic, List, Literal, Optional, Type, TypeVar, Union
-
-from pydantic import BaseModel
+from typing import List, Optional, TypeVar
 from supabase import create_client
-
-from config.config import UserIDType
-from zootopia.storage.database.basedb import BaseDB
-from zootopia.storage.database.models import TABLE_MODEL_MAP, SupabaseConfig, TableModel
+from zootopia.storage.database.database import Database
+from config.models import SupabaseConfig
+from zootopia.core.schema import TableModel
+from zootopia.core.schema.table import TABLE_MODEL_MAP
 
 T = TypeVar("T", bound=TableModel)
 
 
-class SupabaseDB(BaseDB):
+class SupabaseDB(Database):
     def __init__(self, url: str, key: str) -> None:
         self.supabase = create_client(url, key)
 

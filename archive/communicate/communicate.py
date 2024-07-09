@@ -5,10 +5,10 @@ from langchain_core.messages import HumanMessage
 
 from zootopia.controller.action.autodb.autodb import AutoDB
 from config.config import autodb_config, config
-from zootopia.storage.database.supabasedb import SupabaseDB
+from zootopia.storage.database.supabase import SupabaseDB
 from zootopia.llm.llm import LLM
 from zootopia.llm.models import ImitateChat, LLMConfig, LLMNames, LLMProviders
-from zootopia.messaging.basemessaging  import MessageProviderBase
+from zootopia.messaging.messaging  import MessageProviderBase
 from zootopia.messaging.models import ZootopiaMessage
 from zootopia.core.utils.logger import logger
 from zootopia.core.utils.utils import render_jinja_template

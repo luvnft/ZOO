@@ -5,7 +5,7 @@ from zootopia.brain.auth.auth import AuthManager
 from zootopia.brain.auth.auth import AuthManager
 from zootopia.brain.upload.upload import UploadManager
 from zootopia.messaging.models import MessageType
-from zootopia.messaging.basemessaging  import MessageProviderBase
+from zootopia.messaging.messaging  import MessageProviderBase
 from zootopia.messaging.models import ZootopiaMessage, MessageType
 from zootopia.utils.logger import logger
 from zootopia.context.context import ZootopiaContext
