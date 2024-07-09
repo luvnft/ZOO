@@ -3,15 +3,15 @@
 from config.config import ZootopiaConfig
 from zootopia.core.schema import Tables, AgentTableModel, RoomTableModel, UserTableModel
 from zootopia.storage.database.supabase import SupabaseDB
-from zootopia.messaging.messaging import MessageProviderBase
-from zootopia.messaging.bird import BirdSMSProvider
-from zootopia.messaging.models import (
+from zootopia.platform.platform import MessageProviderBase
+from zootopia.platform.sms.bird import BirdSMSProvider
+from zootopia.platform.models import (
     BirdMetadata,
     MessageProvider,
     TelegramMetadata,
     ZootopiaMessage,
 )
-from zootopia.messaging.telegrambot import TelegramBot
+from zootopia.platform.telegram.telegram import Telegram
 
 class ContextManager:
     def __init__(self, request_body, config: ZootopiaConfig):

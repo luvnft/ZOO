@@ -4,16 +4,14 @@ from typing import Any, Dict, Optional, cast
 import requests
 from config.config import BirdConfig
 from zootopia.core.utils.logger import logger
-from zootopia.messaging.messaging  import MessageProviderBase
-from zootopia.messaging.models import (
-    SendMessageError,
-    WebhookError,
+from zootopia.platform.platform  import MessageProviderBase
+from zootopia.platform.models import (
     ZootopiaMessage,
     MessageProvider,
     MessageType,
-    MessageParsingError,
     BirdMetadata
 )
+from zootopia.core.exceptions import MessageParsingError, WebhookError, SendMessageError
 from pydantic import ValidationError
 
 

@@ -6,7 +6,7 @@
  <br />
 </h1>
 <p align="center">
-Zootopians are the First Open-Source Digital Humans 🐰🦊🐻
+Zootopians are the First Open-Source Digital Humans 👩🏽‍🤝‍👩🏼🧍
 </p>
 <p align="center">
   <a href="https://discord.gg/w7p3U9wn"><img src="https://img.shields.io/discord/1217283257469501450?logo=discord&label=discord"/></a>
@@ -31,22 +31,17 @@ Make your own `Twilio SMS` Zootopian powered by `Gemini LLM` with `Bing Search` 
 - [ ] Vision
 
 ### Channels
-- [x] Bird SMS
+- [x] SMS (Bird)
 - [x] Telegram
 - [ ] WhatsApp
-- [ ] Twilio
-- [ ] Phone calls
+- [ ] Twitter
+- [ ] Phone Calls
 
 ### Web Access
 - [x] Google Calendar
 - [x] Google Drive
 - [ ] Search
-
-### LLMs
-- [x] Gemini
-- [x] Groq
-- [x] OpenAI
-- [x] Anthropic
+- [ ] Autonomous agent (using an external API)
 
 ## 🛣️ Roadmap
 

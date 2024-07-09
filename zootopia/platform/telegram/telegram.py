@@ -7,34 +7,31 @@ from typing import Optional, Union, cast
 
 import aiohttp
 import telegram
-from fastapi import Request
 from pydantic import ValidationError
 from config.config import TelegramConfig
-from zootopia.messaging.messaging  import MessageProviderBase
-from zootopia.messaging.models import (
+from zootopia.platform.platform  import MessageProviderBase
+from zootopia.platform.models import (
     ZootopiaMessage,
     MessageProvider,
-    MessageParsingError,
     MessageType,
-    SendMessageError,
     TelegramMessage,
-    WebhookError,
     _TelegramMessageDocument,
     _TelegramMessagePhoto,
     TelegramMetadata
 )
+from zootopia.core.exceptions import MessageParsingError, SendMessageError, WebhookError
 from zootopia.core.utils.logger import logger
 
 
-class TelegramBot(MessageProviderBase):
+class Telegram(MessageProviderBase):
     def __init__(self, token: str):
         """Initialize the Telegram Bot messaging service."""
         self._bot = telegram.Bot(token=token)
         self._user_id = None
 
     @classmethod
-    def from_config(cls, config: TelegramConfig) -> "TelegramBot":
-        """Instantiate and return a TelegramBot object."""
+    def from_config(cls, config: TelegramConfig) -> "Telegram":
+        """Instantiate and return a Telegram object."""
         token = config.TELEGRAM_BOT_TOKEN
         return cls(token)
 

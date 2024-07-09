@@ -11,8 +11,8 @@ from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 
 from config.config import config
-from zootopia.messaging.telegrambot import TelegramBot
-from zootopia.messaging.bird import BirdSMSProvider
+from zootopia.platform.telegram.telegram import Telegram
+from zootopia.platform.sms.bird import BirdSMSProvider
 from zootopia.core.routers.message import router as message_router
 from zootopia.core.utils.logger import logger
 
@@ -31,7 +31,7 @@ async def configure_webhooks():
     ngrok_connection = ngrok.connect(addr="127.0.0.1:8000", proto="http")
     print(f"Ngrok public URL: {ngrok_connection.public_url}")
 
-    _telegram = TelegramBot.from_config(config.MESSAGING_CONFIG.TELEGRAM)
+    _telegram = Telegram.from_config(config.MESSAGING_CONFIG.TELEGRAM)
     _bird = BirdSMSProvider.from_config(config.MESSAGING_CONFIG.BIRD)
     webhook = f"{ngrok_connection.public_url}/message"
     await asyncio.gather(

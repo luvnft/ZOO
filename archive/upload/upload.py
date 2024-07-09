@@ -10,9 +10,9 @@ from config.config import config
 from zootopia.storage.database.supabase import SupabaseDB
 from zootopia.apis.gsuite.gcal.gcal import GCal
 from zootopia.apis.gsuite.gdrive.gdrive import GDrive
-from zootopia.messaging.messaging  import MessageProviderBase
-from zootopia.messaging.models import ZootopiaMessage
-from zootopia.messaging.telegrambot import TelegramBot
+from zootopia.platform.platform  import MessageProviderBase
+from zootopia.platform.models import ZootopiaMessage
+from zootopia.platform.telegram.telegram import Telegram
 from zootopia.core.utils.utils import render_jinja_template
 
 
@@ -30,7 +30,7 @@ class UploadManager:
         self.upload_url = None
 
     async def upload_to_drive(self):
-        file = await TelegramBot.download_file_from_message(
+        file = await Telegram.download_file_from_message(
             self.messaging_service, self.message.message.message
         )
 
